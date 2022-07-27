@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "39373174360",
+    "project_id": "storm-is-coming-f409e",
+    "storage_bucket": "storm-is-coming-f409e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39373174360:android:2e19876fd1a7afa6b6bc2d",
+        "android_client_info": {
+          "package_name": "com.rivalwheels.storm.is.coming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39373174360-olehst45ga9nhi0krt19903euc70ej3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjpMUZC3CidVcMX3S4Ho0AgcF6e-_G1Cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39373174360-olehst45ga9nhi0krt19903euc70ej3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

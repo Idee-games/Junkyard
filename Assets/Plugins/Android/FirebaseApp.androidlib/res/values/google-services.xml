@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">39373174360</string>
+  <string name="google_storage_bucket" translatable="false">storm-is-coming-f409e.appspot.com</string>
+  <string name="project_id" translatable="false">storm-is-coming-f409e</string>
+  <string name="google_api_key" translatable="false">AIzaSyBjpMUZC3CidVcMX3S4Ho0AgcF6e-_G1Cg</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBjpMUZC3CidVcMX3S4Ho0AgcF6e-_G1Cg</string>
+  <string name="google_app_id" translatable="false">1:39373174360:android:2e19876fd1a7afa6b6bc2d</string>
+  <string name="default_web_client_id" translatable="false">39373174360-olehst45ga9nhi0krt19903euc70ej3a.apps.googleusercontent.com</string>
+</resources>

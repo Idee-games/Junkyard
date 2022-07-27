@@ -1,0 +1,845 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &61695852417018119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695852417018118}
+  m_Layer: 0
+  m_Name: EndPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695852417018118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695852417018119}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -11.558, y: -1.46, z: 17.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695853173452422}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &61695852538646548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695852538646555}
+  m_Layer: 0
+  m_Name: IniPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695852538646555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695852538646548}
+  m_LocalRotation: {x: 0, y: 0.0008726948, z: 0, w: 0.99999964}
+  m_LocalPosition: {x: -11.55, y: -1.5579996, z: -17.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695853173452422}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0.1, z: 0}
+--- !u!1 &61695852675661241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695852675661240}
+  m_Layer: 0
+  m_Name: EndPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695852675661240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695852675661241}
+  m_LocalRotation: {x: -0, y: 0.008414798, z: -0, w: 0.9999646}
+  m_LocalPosition: {x: -12.5, y: -1.5579996, z: -17.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695853903841067}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0.964, z: 0}
+--- !u!1 &61695853037650939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853037650938}
+  m_Layer: 0
+  m_Name: Traffic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853037650938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853037650939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.6925383, y: 10.146418, z: -6.6935897}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695854196842459}
+  - {fileID: 61695853797725047}
+  - {fileID: 61695853313357161}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &61695853126273433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853126273432}
+  m_Layer: 0
+  m_Name: IniPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853126273432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853126273433}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
+  m_LocalPosition: {x: 11.6, y: -1.548, z: 17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695854288700721}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &61695853173452423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853173452422}
+  - component: {fileID: 61695853173452421}
+  m_Layer: 0
+  m_Name: Road1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853173452422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853173452423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695852538646555}
+  - {fileID: 61695852417018118}
+  m_Father: {fileID: 61695854196842459}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61695853173452421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853173452423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3699ad17a4c9cb141a3690e9ea5e2ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeOfVehicles:
+  - {fileID: 1629733627658156966, guid: 6f503090d9c3dd145896c62279484e01, type: 3}
+  - {fileID: 8790970770658504748, guid: b0d6307d0a1804545ab010846cd79363, type: 3}
+  - {fileID: 3737244901697714355, guid: 0a01d53e725914f419a73093d880b26d, type: 3}
+  - {fileID: 3093605862813202741, guid: 5e4ab2505907e25419e6342b1e099d0a, type: 3}
+  - {fileID: 1492798767141990770, guid: a82c077a3b9278548ae56081bf9e8cb2, type: 3}
+  - {fileID: 6721447595104898477, guid: f04200f6f2ecc6f4fb0663b81918de9f, type: 3}
+  - {fileID: 990247511168270553, guid: e2a0ad8be5e382c429cadbdc53801386, type: 3}
+  - {fileID: 5116513396555907907, guid: dd9ff9cab13e30d4e970985a342d0b71, type: 3}
+  totalVehicles: 1
+  spawnDelay: 2
+  isFinishRoad: 0
+  initPoint: {fileID: 61695852538646555}
+  endPoint: {fileID: 61695852417018118}
+--- !u!1 &61695853313357162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853313357161}
+  m_Layer: 0
+  m_Name: Roads (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853313357161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853313357162}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695854235336607}
+  - {fileID: 61695854288700721}
+  m_Father: {fileID: 61695853037650938}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &61695853601694107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853601694106}
+  m_Layer: 0
+  m_Name: EndPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853601694106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853601694107}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -11.81, y: -1.46, z: 17.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695854375060784}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &61695853632920145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853632920144}
+  m_Layer: 0
+  m_Name: IniPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853632920144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853632920145}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
+  m_LocalPosition: {x: -12.481, y: -1.548, z: 17.053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695853903841067}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &61695853687474554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853687474553}
+  m_Layer: 0
+  m_Name: EndPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853687474553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853687474554}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 12.523007, y: -1.46, z: 17.567001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695854235336607}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &61695853692682237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853692682236}
+  m_Layer: 0
+  m_Name: IniPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853692682236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853692682237}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
+  m_LocalPosition: {x: -12.44, y: -1.46, z: 17.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695854075969549}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &61695853797725040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853797725047}
+  m_Layer: 0
+  m_Name: Roads (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853797725047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853797725040}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695854375060784}
+  - {fileID: 61695854075969549}
+  m_Father: {fileID: 61695853037650938}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &61695853903841060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853903841067}
+  - component: {fileID: 61695853903841066}
+  m_Layer: 0
+  m_Name: Road1 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853903841067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853903841060}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695853632920144}
+  - {fileID: 61695852675661240}
+  m_Father: {fileID: 61695854196842459}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61695853903841066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853903841060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3699ad17a4c9cb141a3690e9ea5e2ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeOfVehicles:
+  - {fileID: 1629733627658156966, guid: 6f503090d9c3dd145896c62279484e01, type: 3}
+  - {fileID: 8790970770658504748, guid: b0d6307d0a1804545ab010846cd79363, type: 3}
+  - {fileID: 3737244901697714355, guid: 0a01d53e725914f419a73093d880b26d, type: 3}
+  - {fileID: 3093605862813202741, guid: 5e4ab2505907e25419e6342b1e099d0a, type: 3}
+  - {fileID: 1492798767141990770, guid: a82c077a3b9278548ae56081bf9e8cb2, type: 3}
+  - {fileID: 6721447595104898477, guid: f04200f6f2ecc6f4fb0663b81918de9f, type: 3}
+  - {fileID: 990247511168270553, guid: e2a0ad8be5e382c429cadbdc53801386, type: 3}
+  - {fileID: 5116513396555907907, guid: dd9ff9cab13e30d4e970985a342d0b71, type: 3}
+  totalVehicles: 1
+  spawnDelay: 2
+  isFinishRoad: 0
+  initPoint: {fileID: 61695853632920144}
+  endPoint: {fileID: 61695852675661240}
+--- !u!1 &61695853934430930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853934430929}
+  m_Layer: 0
+  m_Name: EndPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853934430929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853934430930}
+  m_LocalRotation: {x: -0, y: 0.008414798, z: -0, w: 0.9999646}
+  m_LocalPosition: {x: 11.51, y: -1.5579996, z: -21.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695854288700721}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0.964, z: 0}
+--- !u!1 &61695853955403673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695853955403672}
+  m_Layer: 0
+  m_Name: IniPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695853955403672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695853955403673}
+  m_LocalRotation: {x: 0, y: 0.0008726948, z: 0, w: 0.99999964}
+  m_LocalPosition: {x: 12.52, y: -1.5579996, z: -21.29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695854235336607}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0.1, z: 0}
+--- !u!1 &61695854075969550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695854075969549}
+  - component: {fileID: 61695854075969548}
+  m_Layer: 0
+  m_Name: Road1 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695854075969549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854075969550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695853692682236}
+  - {fileID: 61695854385811671}
+  m_Father: {fileID: 61695853797725047}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61695854075969548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854075969550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3699ad17a4c9cb141a3690e9ea5e2ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeOfVehicles:
+  - {fileID: 1629733627658156966, guid: 6f503090d9c3dd145896c62279484e01, type: 3}
+  - {fileID: 8790970770658504748, guid: b0d6307d0a1804545ab010846cd79363, type: 3}
+  - {fileID: 3737244901697714355, guid: 0a01d53e725914f419a73093d880b26d, type: 3}
+  - {fileID: 3093605862813202741, guid: 5e4ab2505907e25419e6342b1e099d0a, type: 3}
+  - {fileID: 1492798767141990770, guid: a82c077a3b9278548ae56081bf9e8cb2, type: 3}
+  - {fileID: 6721447595104898477, guid: f04200f6f2ecc6f4fb0663b81918de9f, type: 3}
+  - {fileID: 990247511168270553, guid: e2a0ad8be5e382c429cadbdc53801386, type: 3}
+  - {fileID: 5116513396555907907, guid: dd9ff9cab13e30d4e970985a342d0b71, type: 3}
+  totalVehicles: 1
+  spawnDelay: 2
+  isFinishRoad: 0
+  initPoint: {fileID: 61695853692682236}
+  endPoint: {fileID: 61695854385811671}
+--- !u!1 &61695854105771330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695854105771329}
+  m_Layer: 0
+  m_Name: IniPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695854105771329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854105771330}
+  m_LocalRotation: {x: 0, y: 0.0008726948, z: 0, w: 0.99999964}
+  m_LocalPosition: {x: -11.473, y: -1.5579996, z: -33.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695854375060784}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0.1, z: 0}
+--- !u!1 &61695854196842452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695854196842459}
+  m_Layer: 0
+  m_Name: Roads (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695854196842459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854196842452}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695853173452422}
+  - {fileID: 61695853903841067}
+  m_Father: {fileID: 61695853037650938}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &61695854235336600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695854235336607}
+  - component: {fileID: 61695854235336606}
+  m_Layer: 0
+  m_Name: Road1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695854235336607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854235336600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695853955403672}
+  - {fileID: 61695853687474553}
+  m_Father: {fileID: 61695853313357161}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61695854235336606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854235336600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3699ad17a4c9cb141a3690e9ea5e2ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeOfVehicles:
+  - {fileID: 1629733627658156966, guid: 6f503090d9c3dd145896c62279484e01, type: 3}
+  - {fileID: 8790970770658504748, guid: b0d6307d0a1804545ab010846cd79363, type: 3}
+  - {fileID: 3737244901697714355, guid: 0a01d53e725914f419a73093d880b26d, type: 3}
+  - {fileID: 3093605862813202741, guid: 5e4ab2505907e25419e6342b1e099d0a, type: 3}
+  - {fileID: 1492798767141990770, guid: a82c077a3b9278548ae56081bf9e8cb2, type: 3}
+  - {fileID: 6721447595104898477, guid: f04200f6f2ecc6f4fb0663b81918de9f, type: 3}
+  - {fileID: 990247511168270553, guid: e2a0ad8be5e382c429cadbdc53801386, type: 3}
+  - {fileID: 5116513396555907907, guid: dd9ff9cab13e30d4e970985a342d0b71, type: 3}
+  totalVehicles: 1
+  spawnDelay: 2
+  isFinishRoad: 0
+  initPoint: {fileID: 61695853955403672}
+  endPoint: {fileID: 61695853687474553}
+--- !u!1 &61695854288700722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695854288700721}
+  - component: {fileID: 61695854288700720}
+  m_Layer: 0
+  m_Name: Road1 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695854288700721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854288700722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695853126273432}
+  - {fileID: 61695853934430929}
+  m_Father: {fileID: 61695853313357161}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61695854288700720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854288700722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3699ad17a4c9cb141a3690e9ea5e2ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeOfVehicles:
+  - {fileID: 1629733627658156966, guid: 6f503090d9c3dd145896c62279484e01, type: 3}
+  - {fileID: 8790970770658504748, guid: b0d6307d0a1804545ab010846cd79363, type: 3}
+  - {fileID: 3737244901697714355, guid: 0a01d53e725914f419a73093d880b26d, type: 3}
+  - {fileID: 3093605862813202741, guid: 5e4ab2505907e25419e6342b1e099d0a, type: 3}
+  - {fileID: 1492798767141990770, guid: a82c077a3b9278548ae56081bf9e8cb2, type: 3}
+  - {fileID: 6721447595104898477, guid: f04200f6f2ecc6f4fb0663b81918de9f, type: 3}
+  - {fileID: 990247511168270553, guid: e2a0ad8be5e382c429cadbdc53801386, type: 3}
+  - {fileID: 5116513396555907907, guid: dd9ff9cab13e30d4e970985a342d0b71, type: 3}
+  totalVehicles: 1
+  spawnDelay: 2
+  isFinishRoad: 0
+  initPoint: {fileID: 61695853126273432}
+  endPoint: {fileID: 61695853934430929}
+--- !u!1 &61695854375060785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695854375060784}
+  - component: {fileID: 61695854375060791}
+  m_Layer: 0
+  m_Name: Road1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695854375060784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854375060785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 61695854105771329}
+  - {fileID: 61695853601694106}
+  m_Father: {fileID: 61695853797725047}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61695854375060791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854375060785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3699ad17a4c9cb141a3690e9ea5e2ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeOfVehicles:
+  - {fileID: 1629733627658156966, guid: 6f503090d9c3dd145896c62279484e01, type: 3}
+  - {fileID: 8790970770658504748, guid: b0d6307d0a1804545ab010846cd79363, type: 3}
+  - {fileID: 3737244901697714355, guid: 0a01d53e725914f419a73093d880b26d, type: 3}
+  - {fileID: 3093605862813202741, guid: 5e4ab2505907e25419e6342b1e099d0a, type: 3}
+  - {fileID: 1492798767141990770, guid: a82c077a3b9278548ae56081bf9e8cb2, type: 3}
+  - {fileID: 6721447595104898477, guid: f04200f6f2ecc6f4fb0663b81918de9f, type: 3}
+  - {fileID: 990247511168270553, guid: e2a0ad8be5e382c429cadbdc53801386, type: 3}
+  - {fileID: 5116513396555907907, guid: dd9ff9cab13e30d4e970985a342d0b71, type: 3}
+  totalVehicles: 1
+  spawnDelay: 2
+  isFinishRoad: 0
+  initPoint: {fileID: 61695854105771329}
+  endPoint: {fileID: 61695853601694106}
+--- !u!1 &61695854385811664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61695854385811671}
+  m_Layer: 0
+  m_Name: EndPOint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61695854385811671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61695854385811664}
+  m_LocalRotation: {x: -0, y: 0.008414798, z: -0, w: 0.9999646}
+  m_LocalPosition: {x: -12.447, y: -1.5579996, z: -33.565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61695854075969549}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0.964, z: 0}

@@ -14,9 +14,9 @@ public class GameplayScript : MonoBehaviour {
     public Cinemachine.CinemachineVirtualCamera playerCamMachine;
     public CinemachineShake camShake;
     public GameObject [] environments;
-    public GameObject [] resourceObjects;
-    public StructureHandler buildStructureHandler;
-    public GameObject traffic;
+    //public GameObject [] resourceObjects;
+   // public StructureHandler buildStructureHandler;
+   // public GameObject traffic;
 
     public float finalDecisionDelay = 0;
 
@@ -29,7 +29,7 @@ public class GameplayScript : MonoBehaviour {
     public AudioListener camListner;
     public bool canShowReviewMenu = false;
     public LevelsManager levelsManager;
-    public DisasterHandler disasterHandler;
+   // public DisasterHandler disasterHandler;
 
     [Header("Colors")]
     public Color[] randomColors;
@@ -55,7 +55,7 @@ public class GameplayScript : MonoBehaviour {
     void Start()
     {
         levelCompleted = false;
-        Toolbox.DB.prefs.ResetResources();
+      //  Toolbox.DB.prefs.ResetResources();
 
         AdsManager.instance.RequestAd(AdsManager.AdType.INTERSTITIAL);
         AdsManager.instance.RequestAd(AdsManager.AdType.REWARDED);
@@ -76,7 +76,7 @@ public class GameplayScript : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            OnStormHandling();
+          //  OnStormHandling();
         }
 #endif
     }
@@ -92,7 +92,7 @@ public class GameplayScript : MonoBehaviour {
     public void EnableEnvHandling(int _val)
     {
         environments[_val].gameObject.SetActive(true);
-        traffic.transform.GetChild(_val).gameObject.SetActive(true);
+        
     }
 
     public void IncrementGoldCoins(int cost)
@@ -154,26 +154,26 @@ public class GameplayScript : MonoBehaviour {
         RenderSettings.skybox = _mat;
     }
 
-    public void EnableResource(int _val) {
+    //public void EnableResource(int _val) {
 
-        resourceObjects[_val].SetActive(true);
-    }
+    //    resourceObjects[_val].SetActive(true);
+    //}
 
-    public void OnStormHandling() {
+    //public void OnStormHandling() {
 
-        playerCamMachine.Follow = levelsManager.CurLevelHandler.houseObj.transform;
-        Toolbox.HUDListner.DisableHUD();
-        player.gameObject.SetActive(false);
-        Toolbox.HUDListner.startTime = false;
+    //    playerCamMachine.Follow = levelsManager.CurLevelHandler.houseObj.transform;
+    //    Toolbox.HUDListner.DisableHUD();
+    //    player.gameObject.SetActive(false);
+    //    Toolbox.HUDListner.startTime = false;
 
-        buildStructureHandler.DisableAllSpecs();
+    //    buildStructureHandler.DisableAllSpecs();
 
-        Toolbox.GameManager.InstantiatePopup_MessageBar( levelsManager.CurLevelData.disaster.ToString() + " IS COMING");
+    //    Toolbox.GameManager.InstantiatePopup_MessageBar( levelsManager.CurLevelData.disaster.ToString() + " IS COMING");
 
-        Invoke("InitDisaster", 3);
-        Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.siren);
+    //    Invoke("InitDisaster", 3);
+    //    Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.siren);
 
-    }
+    //}
 
     public void FinalDecisionHandling(float _delay) {
 
@@ -189,59 +189,59 @@ public class GameplayScript : MonoBehaviour {
         }
     }
 
-    void InitDisaster() {
+    //void InitDisaster() {
 
-        StopTraffic();
-        Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.panicSound);
-        Time.timeScale = 1.1f;
+    //    StopTraffic();
+    //    Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.panicSound);
+    //    Time.timeScale = 1.1f;
 
-        switch (levelsManager.CurLevelData.disaster)
-        {
-            case DisasterType.EARTHQUAKE:
-                disasterHandler.EarthQuakes();
-                Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.EarthQuake);
+    //    switch (levelsManager.CurLevelData.disaster)
+    //    {
+    //        case DisasterType.EARTHQUAKE:
+    //            disasterHandler.EarthQuakes();
+    //            Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.EarthQuake);
 
-                break;
-            case DisasterType.STORM:
-                disasterHandler.Storm();
-                Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.Storm);
+    //            break;
+    //        case DisasterType.STORM:
+    //            disasterHandler.Storm();
+    //            Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.Storm);
 
-                break;
-            case DisasterType.VOLCANO:
-                disasterHandler.Volcano();
-                Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.fire);
+    //            break;
+    //        case DisasterType.VOLCANO:
+    //            disasterHandler.Volcano();
+    //            Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.fire);
 
-                break;
-            case DisasterType.TSUNAMI:
-                disasterHandler.Tsunami();
-                Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.Storm);
+    //            break;
+    //        case DisasterType.TSUNAMI:
+    //            disasterHandler.Tsunami();
+    //            Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.Storm);
 
-                break;
-            case DisasterType.TORNADO:
-                disasterHandler.Tornado();
-                Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.Tornado);
+    //            break;
+    //        case DisasterType.TORNADO:
+    //            disasterHandler.Tornado();
+    //            Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.Tornado);
 
-                break;
-            default:
-                break;
-        }
+    //            break;
+    //        default:
+    //            break;
+    //    }
 
-        //buildStructureHandler.InitDistruction();
-    }
+    //    //buildStructureHandler.InitDistruction();
+    //}
 
-    public void StartBuildingDistruction() {
+    //public void StartBuildingDistruction() {
 
-        //Debug.LogError("Destruction");
-        buildStructureHandler.InitDistruction();
-        Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.vehicleExplosion);
+    //    //Debug.LogError("Destruction");
+    //    buildStructureHandler.InitDistruction();
+    //    Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.vehicleExplosion);
 
-    }
+    //}
 
-    public void StopTraffic() {
+    //public void StopTraffic() {
 
-        foreach (var item in traffic.GetComponentsInChildren<VehicleHandler>())
-        {
-            item.Stop();
-        }
-    }
+    //    foreach (var item in traffic.GetComponentsInChildren<VehicleHandler>())
+    //    {
+    //        item.Stop();
+    //    }
+    //}
 }

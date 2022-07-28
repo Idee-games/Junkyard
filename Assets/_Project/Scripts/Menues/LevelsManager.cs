@@ -121,26 +121,6 @@ public class LevelsManager : MonoBehaviour
         Toolbox.GameplayScript.EnableEnvHandling(curLevelData.environmentNumber);
 
 
-        for (int i = 0; i < curLevelData.hasResources.Length; i++)
-        {
-
-            Toolbox.HUDListner.EnableResource((int)CurLevelData.hasResources[i]);
-            Toolbox.GameplayScript.EnableResource((int)CurLevelData.hasResources[i]);
-
-            if (Toolbox.GameplayScript.levelsManager.CurLevelData.truckOn)
-            {
-                pileHandler.EnablePileResource((int)Toolbox.GameplayScript.levelsManager.CurLevelData.hasResources[i]);
-            }
-        }
-        if (Toolbox.GameplayScript.levelsManager.CurLevelData.truckOn)
-        {
-            pileHandler.StockUpLoop();
-            pileHandler.truck.SetActive(true);
-            pileHandler.truckON = true;
-           
-        }
-        //Toolbox.HUDListner.StartTime(curLevelData.time);
-
-        Toolbox.GameplayScript.player.InitResourcesValOnBack();
+       
     }
 }

@@ -86,7 +86,7 @@ public class Prefs
 
     [SerializeField] private int analytic_GameRunCount = 0;
 
-    [SerializeField] private int resourceGatherLevel = 0;
+   
     [SerializeField] private int playerSpeedLevel = 0;
 
     [SerializeField] private int lastSelectedPlayerObj = 0;
@@ -156,13 +156,7 @@ public class Prefs
 
     }
 
-    public void ResetResources()
-    {
-        foreach (var item in resourceAmount)
-        {
-            item.value = 0;
-        }
-    }
+    
 
     public bool GameAudio { get => gameAudio; set => gameAudio = value; }
     public bool GameMusic { get => gameMusic; set => gameMusic = value; }
@@ -200,8 +194,6 @@ public class Prefs
     public int LastSelectedEnv { get => lastSelectedEnv; set => lastSelectedEnv = value; }
     public bool IsBossLevel { get => isBossLevel; set => isBossLevel = value; }
     public int StartSpawnPlayersVal { get => startSpawnPlayersVal; set => startSpawnPlayersVal = value; }
-    public ResourceAmount[] ResourceAmount { get => resourceAmount; set => resourceAmount = value; }
-    public int ResourceGatherLevel { get => resourceGatherLevel; set => resourceGatherLevel = value; }
     public int PlayerSpeedLevel { get => playerSpeedLevel; set => playerSpeedLevel = value; }
 }
 public class DB : MonoBehaviour {

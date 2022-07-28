@@ -13,17 +13,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerSpeed = 2.0f;
     private float gravityValue = -9.81f;
 
-    public GameObject [] resourcesObjs;
-    public PlayerResourceHandler [] resourcesHandler;
+   
     public Transform playerParent;
     //public PlayerResources[] resources;
 
-    public GameObject [] resourceSendEffect;
-
+   
 
     [Space(10)]
-    public List<ResourceHandler> resourceInTrigger;
-    [SerializeField] private bool isGathering = false;
+   
+    
 
     float time = 0;
     float gatherDelay = 0.8f;
@@ -50,7 +48,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerMovement();
-        ResourceGatherHandling();
+       
 
         GatherTimeHandling();
     }
@@ -65,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
         if (time <= 0){
 
-            GatherRequestHandling();
+          
         }
     }
 
@@ -108,41 +106,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void ResourceGatherHandling()
-    {
-        if (!isGathering && resourceInTrigger.Count > 0) {
-           
-            isGathering = true;
-            anim.SetTrigger("Attack");
-            time = gatherDelay;
-        }
-    }
+  
 
-    public void GatherRequestHandling() {
-        
-        if (resourceInTrigger.Count > 0)
-        {
-            for (int i = 0; i < resourceInTrigger.Count; i++)
-            {
-                if (resourceInTrigger[i])
-                    resourceInTrigger[i].GetResource();
-            }
-        }
-
-        isGathering = false;
-
-    }
-
-    public void AddResource(ResourceHandler _handler)
-    {
-        resourceInTrigger.Add(_handler);
-        _handler.DistanceCheckStatus(true);
-    }
-
-    public void RemoveResource(ResourceHandler _handler) {
-
-        resourceInTrigger.Remove(_handler);
-    }
+  
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
@@ -172,38 +138,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    bool isResourceHandlerAvailable(ResourceHandler _handler) {
-
-        for (int i = 0; i < resourceInTrigger.Count; i++)
-        {
-            if (resourceInTrigger[i] == _handler) {
-
-                return true;
-            }
-        }
-
-        return false;
-    }
+   
 
     private void OnTriggerEnter(Collider other)
     {
         //Debug.LogError("Trigger = " + other.gameObject.tag.ToString());
         switch (other.tag)
         {
-            case "Resource":
-                ResourceHandler handler = other.GetComponent<ResourceHandler>();
-                if (!isResourceHandlerAvailable(handler))
-                    AddResource(handler);
-
-                break;
-
-            case "ResourceStructure":
-                other.GetComponent<ResourceStructureHandling>().InitProcessing();
-                break;
-
-            case "Lift":
-                this.transform.parent = other.transform;
-                break;
+          
             case "Coin":
                 Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.coinsSound);
                 Toolbox.DB.prefs.GoldCoins = Toolbox.DB.prefs.GoldCoins + 1;
@@ -227,7 +169,7 @@ public class PlayerController : MonoBehaviour
         {
             case "Resource":
 
-                RemoveResource(other.GetComponent<ResourceHandler>());
+              
 
                 break;
 
@@ -277,39 +219,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public void InitResourcesValOnBack() {
+    
 
-        resourceAvailableInLevel = Toolbox.GameplayScript.levelsManager.CurLevelData.hasResources.Length;
-        for (int i = 0; i < resourceAvailableInLevel; i++)
-        {
-            ResourceType rType = Toolbox.GameplayScript.levelsManager.CurLevelData.hasResources[i];
-            resourcesHandler[i].SetResource(Toolbox.GameplayScript.levelsManager.CurLevelData.hasResources[i], resourcesObjs[(int)rType]);
-        }
-    }
-    public void AddResourceOnBack(ResourceType _type)
-    {
-        for (int i = 0; i < resourceAvailableInLevel; i++)
-        {
-            if (_type == resourcesHandler[i].type) {
-                resourcesHandler[i].Add();
-            }
-        }
-    }
-
-    public void RemoveResourceOnBack(ResourceType _type)
-    {
-        for (int i = 0; i < resourceAvailableInLevel; i++)
-        {
-            if (_type == resourcesHandler[i].type)
-            {
-                resourcesHandler[i].Remove();
-            }
-        }
-    }
-
-    public void SendResource(ResourceType _type, Transform _point) {
-
-        GameObject sendEffect = Instantiate(resourceSendEffect[(int)_type], this.transform.position /*+ new Vector3(this.transform.position.x, this.transform.position.y + 2, this.transform.position.z)*/, Quaternion.identity);
-        sendEffect.GetComponent<MoveTO>().EnableMovement(_point);
-    }
+   
 }

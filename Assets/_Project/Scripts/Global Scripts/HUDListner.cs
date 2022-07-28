@@ -38,7 +38,7 @@ public class HUDListner : MonoBehaviour {
 
     private void Update()
     {
-        HandleTime();
+       // HandleTime();
     }
 
     public void StartTime(float _val) {
@@ -86,28 +86,16 @@ public class HUDListner : MonoBehaviour {
                 
                 else
                 {
-                    Toolbox.GameplayScript.OnStormHandling();
+                    
                 }
                 
             }
         }
     }
 
-    public void EnableResource(int _index) {
+   
 
-        
-        Transform resource = resourcesParent.GetChild(_index).transform;
-        resource.gameObject.SetActive(true);
-        UpdateResourceTxt(_index);
-
-        resource.GetComponent<RectTransform>().position = resourcePosition[resourceIndex].position;
-        resourceIndex++;
-    }
-
-    public void UpdateResourceTxt(int _index) {
-
-        resourcesTxts[_index].text = Toolbox.DB.prefs.ResourceAmount[_index].value.ToString();    
-    }
+   
 
     public void Press_Pause() {
 

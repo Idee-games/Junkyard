@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public CharacterController controller;
+  //  public CharacterController controller;
     private Animator anim;
     public GameObject[] models;
     private int index = 0;
@@ -11,10 +11,11 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     [SerializeField] private float playerSpeed = 2.0f;
+    [SerializeField] private float playerRotate = 2.0f;
     private float gravityValue = -9.81f;
 
    
-    public Transform playerParent;
+  //  public Transform playerParent;
     //public PlayerResources[] resources;
 
    
@@ -27,9 +28,44 @@ public class PlayerController : MonoBehaviour
     float gatherDelay = 0.8f;
     int resourceAvailableInLevel = 0;
 
+    Vector3 movementInput;
+    Rigidbody playerRigidbody;
 
+    
+
+    void FixedUpdate()
+    {
+        movementInput = CnControls.CnInputManager.GetAxis("Horizontal") * Vector3.right +
+                        CnControls.CnInputManager.GetAxis("Vertical") * Vector3.forward;
+        movementInput.Normalize();
+
+        float y = playerRigidbody.velocity.y;
+
+        if (movementInput != Vector3.zero)
+        {
+            if (transform.forward != movementInput)
+            {
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(movementInput), Time.deltaTime * 180);
+
+              //  playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 30000);
+            }
+            else
+            {
+               // playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, movementInput * 10, Time.deltaTime * 30000);
+            }
+        }
+        else
+        {
+           // playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 30000);
+        }
+        //Vector3 velocity = playerRigidbody.velocity;
+      //  velocity.y = y;
+       // playerRigidbody.velocity = velocity;
+    }
     private void Start()
     {
+        playerRigidbody = GetComponent<Rigidbody>();
+        // playerRigidbody.freezeRotation = true;
         index = Toolbox.DB.prefs.LastSelectedPlayerObj;
         EnableCharacter(index);
     }
@@ -50,7 +86,7 @@ public class PlayerController : MonoBehaviour
         PlayerMovement();
        
 
-        GatherTimeHandling();
+  // GatherTimeHandling();
     }
 
     private void GatherTimeHandling()
@@ -69,22 +105,27 @@ public class PlayerController : MonoBehaviour
 
     void PlayerMovement() {
 
-        groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
+        //groundedPlayer = controller.isGrounded;
+        //if (groundedPlayer && playerVelocity.y < 0)
+        //{
+        //    playerVelocity.y = 0f;
+        //}
 
         Vector3 move = new Vector3(CnControls.CnInputManager.GetAxis("Horizontal"), 0, CnControls.CnInputManager.GetAxis("Vertical"));
-        controller.Move(move * Time.deltaTime * playerSpeed);
+        transform.Translate(move * Time.deltaTime * playerSpeed, Space.World);
+        // transform.LookAt(new Vector3();
 
-        if (move != Vector3.zero)
-        {
-            gameObject.transform.forward = move;
-        }
+      
 
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        //  // Direction pointing to
+
+        //if (move != Vector3.zero)
+        //{
+        //    gameObject.transform.forward = move;
+        //}
+
+        //  playerVelocity.y += gravityValue * Time.deltaTime;
+        //transform.Translate(playerVelocity * Time.deltaTime);
 
         UpdateMovement(move);
     }
@@ -175,7 +216,7 @@ public class PlayerController : MonoBehaviour
 
             case "Lift":
 
-                this.transform.parent = playerParent;
+            //    this.transform.parent = playerParent;
 
                 break;
 

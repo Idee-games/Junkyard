@@ -22,6 +22,10 @@ TagManager:
   - logStop
   - Truck
   - Chest
+  - Junk
+  - Magnet
+  - Factory
+  - FactoryRange
   layers:
   - Default
   - TransparentFX

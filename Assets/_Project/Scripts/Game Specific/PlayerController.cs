@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-  //  public CharacterController controller;
-    private Animator anim;
+    //  public CharacterController controller;
+   // private Animator anim;
     public GameObject[] models;
     private int index = 0;
     private bool run = false;
@@ -14,15 +14,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerRotate = 2.0f;
     private float gravityValue = -9.81f;
 
-   
-  //  public Transform playerParent;
+
+    //  public Transform playerParent;
     //public PlayerResources[] resources;
 
-   
+
 
     [Space(10)]
-   
-    
+
+
 
     float time = 0;
     float gatherDelay = 0.8f;
@@ -31,10 +31,11 @@ public class PlayerController : MonoBehaviour
     Vector3 movementInput;
     Rigidbody playerRigidbody;
 
-    
+
 
     void FixedUpdate()
     {
+
         movementInput = CnControls.CnInputManager.GetAxis("Horizontal") * Vector3.right +
                         CnControls.CnInputManager.GetAxis("Vertical") * Vector3.forward;
         movementInput.Normalize();
@@ -47,20 +48,20 @@ public class PlayerController : MonoBehaviour
             {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(movementInput), Time.deltaTime * 180);
 
-              //  playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 30000);
+                //  playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 30000);
             }
             else
             {
-               // playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, movementInput * 10, Time.deltaTime * 30000);
+                // playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, movementInput * 10, Time.deltaTime * 30000);
             }
         }
         else
         {
-           // playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 30000);
+            // playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 30000);
         }
         //Vector3 velocity = playerRigidbody.velocity;
-      //  velocity.y = y;
-       // playerRigidbody.velocity = velocity;
+        //  velocity.y = y;
+        // playerRigidbody.velocity = velocity;
     }
     private void Start()
     {
@@ -70,7 +71,7 @@ public class PlayerController : MonoBehaviour
         EnableCharacter(index);
     }
 
-   public void EnableCharacter(int index) {
+    public void EnableCharacter(int index) {
 
         foreach (var item in models)
         {
@@ -78,28 +79,28 @@ public class PlayerController : MonoBehaviour
         }
 
         models[index].SetActive(true);
-        anim = models[index].GetComponent<Animator>();
+      //  anim = models[index].GetComponent<Animator>();
     }
 
     void Update()
     {
         PlayerMovement();
-       
+        Debug.Log(CnControls.CnInputManager.GetAxis("Horizontal"));
 
-  // GatherTimeHandling();
+        // GatherTimeHandling();
     }
 
     private void GatherTimeHandling()
     {
         if (time <= 0)
             return;
-        
+
 
         time -= Time.deltaTime;
 
-        if (time <= 0){
+        if (time <= 0) {
 
-          
+
         }
     }
 
@@ -114,8 +115,14 @@ public class PlayerController : MonoBehaviour
         Vector3 move = new Vector3(CnControls.CnInputManager.GetAxis("Horizontal"), 0, CnControls.CnInputManager.GetAxis("Vertical"));
         transform.Translate(move * Time.deltaTime * playerSpeed, Space.World);
         // transform.LookAt(new Vector3();
-
-      
+        if (CnControls.CnInputManager.GetAxis("Horizontal") != 0 || CnControls.CnInputManager.GetAxis("Vertical") != 0)
+        {
+            models[index].GetComponent<TireController>().startRotate();
+        }
+        else
+        {
+            models[index].GetComponent<TireController>().stopRotate();
+        }
 
         //  // Direction pointing to
 
@@ -123,11 +130,18 @@ public class PlayerController : MonoBehaviour
         //{
         //    gameObject.transform.forward = move;
         //}
+        if(transform.position.y > 9)
+        {
+            playerVelocity.y += gravityValue * Time.deltaTime;
+        }
+        else
+        {
 
+        }
         //  playerVelocity.y += gravityValue * Time.deltaTime;
         //transform.Translate(playerVelocity * Time.deltaTime);
 
-        UpdateMovement(move);
+     //   UpdateMovement(move);
     }
 
 
@@ -143,7 +157,7 @@ public class PlayerController : MonoBehaviour
             run = false;
         }
 
-        anim.SetBool("Run", run);
+      //  anim.SetBool("Run", run);
 
     }
 

@@ -24701,11 +24701,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870471384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.89, y: 11.55, z: -11.87}
+  m_LocalPosition: {x: 4.89, y: 9.96, z: -11.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2095437141}
   - {fileID: 1721152475}
+  - {fileID: 1843051442}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24723,7 +24724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   models:
   - {fileID: 1474179721938688553}
-  playerSpeed: 4
+  playerSpeed: 6
   playerRotate: 2
 --- !u!1 &873370722
 GameObject:
@@ -32692,7 +32693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084605068}
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 4.89, y: 26.870893, z: -24.725754}
+  m_LocalPosition: {x: 4.89, y: 32.941338, z: -31.153631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1856514253}
@@ -50040,6 +50041,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830946058}
   m_Mesh: {fileID: 4300000, guid: df5596ad1c47efa4bb195650c6a65bbe, type: 3}
+--- !u!1 &1843051441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843051442}
+  - component: {fileID: 1843051443}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: MagnetRange
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843051442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843051441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.346, y: 1.218, z: 3.456}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 870471387}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1843051443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843051441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2036974, y: 1.4552006, z: 1.73}
+  m_Center: {x: 0.16611516, y: -0.24260026, z: 0}
 --- !u!1 &1843892220
 GameObject:
   m_ObjectHideFlags: 0
@@ -50403,7 +50448,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 20
+  m_CameraDistance: 30
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -53481,7 +53526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084944066}
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 4.89, y: 26.870893, z: -24.725754}
+  m_LocalPosition: {x: 4.89, y: 32.941338, z: -31.153631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53785,6 +53830,7 @@ GameObject:
   - component: {fileID: 2095437141}
   - component: {fileID: 2095437142}
   - component: {fileID: 2095437143}
+  - component: {fileID: 2095437144}
   m_Layer: 0
   m_Name: Magnet
   m_TagString: Magnet
@@ -53817,8 +53863,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.33, y: 0.13, z: 1.19}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.33, y: 0.36836094, z: 1.19}
+  m_Center: {x: 0, y: -0.11918047, z: 0}
 --- !u!114 &2095437143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53831,7 +53877,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa844b36be4cf6d428675ceed798c524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: {fileID: 1843051441}
   magnetOn: 1
+--- !u!65 &2095437144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095437140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.33, y: 0.36836094, z: 1.19}
+  m_Center: {x: 0, y: -0.11918047, z: 0}
 --- !u!1001 &2095844712
 PrefabInstance:
   m_ObjectHideFlags: 0

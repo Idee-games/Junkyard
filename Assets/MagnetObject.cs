@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MagnetObject : MonoBehaviour
 {
+    public GameObject trigger;
     public bool magnetOn = true;
     // Start is called before the first frame update
     void Start()
@@ -14,9 +15,10 @@ public class MagnetObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.childCount > 3)
+        if(transform.childCount > 2)
         {
             magnetOn = false;
+            trigger.SetActive(false);
         }
     }
 }

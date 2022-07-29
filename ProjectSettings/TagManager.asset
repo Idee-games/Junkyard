@@ -26,6 +26,7 @@ TagManager:
   - Magnet
   - Factory
   - FactoryRange
+  - MagnetRange
   layers:
   - Default
   - TransparentFX

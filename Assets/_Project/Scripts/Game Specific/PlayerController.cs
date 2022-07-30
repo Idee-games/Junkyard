@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerMovement();
-        Debug.Log(CnControls.CnInputManager.GetAxis("Horizontal"));
+       // Debug.Log(CnControls.CnInputManager.GetAxis("Horizontal"));
 
         // GatherTimeHandling();
     }

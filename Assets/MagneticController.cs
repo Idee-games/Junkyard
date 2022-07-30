@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class MagneticController : MonoBehaviour
 {
+    bool onFactory = false;
     Transform player;
     public float distance;
-    //Rigidbody move;
+   // Rigidbody move;
     float speed = 20f;
     bool movetotrunk = false;
     bool movetoFactory = false;
@@ -14,7 +15,7 @@ public class MagneticController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //move = GetComponent<Rigidbody>();
+       // move = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Magnet").transform;
         factory = GameObject.FindGameObjectWithTag("Factory").transform;
     }
@@ -29,14 +30,14 @@ public class MagneticController : MonoBehaviour
         //    move.AddForce((player.transform.position - transform.position) * (14));
         //}
 
-        if(movetotrunk && player.GetComponent<MagnetObject>().magnetOn)
+        if(movetotrunk)
         {
-            transform.position = Vector3.MoveTowards(transform.position , player.transform.position,0.1f);
+            transform.position = Vector3.MoveTowards(transform.position , player.transform.position,0.35f);
             //move.AddForce((factory.transform.position - transform.position) * (16));
         }
         if (movetoFactory)
         {
-            transform.position = Vector3.MoveTowards(transform.position, factory.transform.position, 0.1f);
+            transform.position = Vector3.MoveTowards(transform.position, factory.transform.position, 0.35f);
             //move.AddForce((factory.transform.position - transform.position) * (16));
         }
     }
@@ -45,32 +46,49 @@ public class MagneticController : MonoBehaviour
 
         if(other.CompareTag("MagnetRange"))
         {
-            Destroy(GetComponent<Rigidbody>());
-            movetotrunk = true;
+            if (!onFactory)
+            {
+                // Destroy(GetComponent<Rigidbody>());
+                movetotrunk = true;
+            }
         }
         if (other.CompareTag("Magnet"))
         {
-            
-            transform.parent = player;
-            movetotrunk = false;
-            //speed = 0f;
-            // move.isKinematic = true;
+            if (!onFactory)
+            {
+                transform.parent = player;
+                movetotrunk = false;
+                //speed = 0f;
+                //  move.isKinematic = true;
+            }
         }
         if (other.CompareTag("FactoryRange"))
         {
-           Destroy(transform.GetComponent<BoxCollider>());
+
+            onFactory = true;
+           Destroy(transform.GetComponent<MeshCollider>());
             //move.isKinematic = false;
             movetoFactory = true;
+            transform.parent = factory;
+            Debug.Log(transform.parent);
+            player.GetComponent<MagnetObject>().trigger.SetActive(true);
+            Des();
         }
         if (other.CompareTag("Factory"))
         {
            // move.isKinematic = true;
-            transform.parent = factory;
-            movetoFactory = false;
-            player.GetComponent<MagnetObject>().magnetOn = true;
-            player.GetComponent<MagnetObject>().trigger.SetActive(true);
+            
+            
+            //movetoFactory = false;
+          //  player.GetComponent<MagnetObject>().magnetOn = true;
+           
+            
         }
     }
-
+    public void Des()
+    {
+        Debug.Log("Destroyeddd");
+        Destroy(gameObject, 2f);
+    }
 }
 

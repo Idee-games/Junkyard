@@ -17,7 +17,7 @@ public class MagnetObject : MonoBehaviour
     {
         if(transform.childCount > 2)
         {
-            magnetOn = false;
+           
             trigger.SetActive(false);
         }
     }

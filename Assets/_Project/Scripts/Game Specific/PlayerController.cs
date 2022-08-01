@@ -138,10 +138,10 @@ public class PlayerController : MonoBehaviour
         {
 
         }
-        //  playerVelocity.y += gravityValue * Time.deltaTime;
+        //playerVelocity.y += gravityValue * Time.deltaTime;
         //transform.Translate(playerVelocity * Time.deltaTime);
 
-     //   UpdateMovement(move);
+        //   UpdateMovement(move);
     }
 
 

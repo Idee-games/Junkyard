@@ -15,7 +15,7 @@ public class MagnetObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.childCount > 2)
+        if(transform.childCount > 7)
         {
            
             trigger.SetActive(false);

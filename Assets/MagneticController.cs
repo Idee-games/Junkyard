@@ -32,12 +32,12 @@ public class MagneticController : MonoBehaviour
 
         if(movetotrunk)
         {
-            transform.position = Vector3.MoveTowards(transform.position , player.transform.position, 20f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position , player.transform.position, 28f * Time.deltaTime);
             //move.AddForce((factory.transform.position - transform.position) * (16));
         }
         if (movetoFactory)
         {
-            transform.position = Vector3.MoveTowards(transform.position, factory.transform.position, 10f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, factory.transform.position, 28f * Time.deltaTime);
             //move.AddForce((factory.transform.position - transform.position) * (16));
         }
     }

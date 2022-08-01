@@ -22,3 +22,4 @@ MonoBehaviour:
   hasExtras: 0
   truckOn: 0
   bgSound: {fileID: 0}
+  levelCompleteInt: 20

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MagneticController : MonoBehaviour
 {
+    bool counted = false;
     bool onFactory = false;
     Transform player;
     public float distance;
@@ -12,6 +13,7 @@ public class MagneticController : MonoBehaviour
     bool movetotrunk = false;
     bool movetoFactory = false;
     Transform factory;
+    float progress;
     // Use this for initialization
     void Start()
     {
@@ -87,6 +89,18 @@ public class MagneticController : MonoBehaviour
     }
     public void Des()
     {
+        if (!counted)
+        {
+            Toolbox.GameplayScript.counterJunk++;
+            progress = ((float)Toolbox.GameplayScript.counterJunk / (float)Toolbox.GameplayScript.levelsManager.CurLevelHandler.levelCompleteInt);
+            Toolbox.HUDListner.SetProgressBarFill(progress);
+            counted = true;
+            
+        }
+        if (Toolbox.GameplayScript.levelsManager.CurLevelHandler.levelCompleteInt <= Toolbox.GameplayScript.counterJunk)
+        {
+            Toolbox.GameplayScript.LevelCompleteHandling();
+        }
         Debug.Log("Destroyeddd");
         Destroy(gameObject, 2f);
     }

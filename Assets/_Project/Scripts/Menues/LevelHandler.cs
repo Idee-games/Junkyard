@@ -7,5 +7,6 @@ public class LevelHandler : MonoBehaviour
     public GameObject houseObj;
 
     public GameObject tutorials;
-   
+
+    public int levelCompleteInt;
 }

@@ -8,7 +8,7 @@ public class GameplayScript : MonoBehaviour {
 
     public bool levelCompleted = false;
     public bool levelFailed = false;
-
+    public int counterJunk;
     public PlayerController player;
     public Cinemachine.CinemachineBrain camBrain;
     public Cinemachine.CinemachineVirtualCamera playerCamMachine;

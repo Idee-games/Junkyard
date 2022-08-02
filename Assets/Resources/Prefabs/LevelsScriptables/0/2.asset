@@ -15,11 +15,11 @@ MonoBehaviour:
   environmentNumber: 0
   ShowTutorial: 0
   time: 183
-  hasResources: 0000000001000000
+  hasResources: 
   disaster: 2
   weather: 0
   isNight: 0
   hasExtras: 0
   truckOn: 0
   bgSound: {fileID: 0}
-  truckIndex: 1
+  truckIndex: 0

@@ -74,6 +74,7 @@ public class MagneticController : MonoBehaviour
             transform.parent = factory;
             Debug.Log(transform.parent);
             player.GetComponent<MagnetObject>().trigger.SetActive(true);
+            player.GetComponent<MagnetObject>().anim.SetBool("isEmpty", true);
             Des();
         }
         if (other.CompareTag("Factory"))

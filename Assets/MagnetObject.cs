@@ -5,6 +5,7 @@ using UnityEngine;
 public class MagnetObject : MonoBehaviour
 {
     public GameObject trigger;
+    public Animator anim;
     public bool magnetOn = true;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,8 @@ public class MagnetObject : MonoBehaviour
     {
         if(transform.childCount > 7)
         {
-           
+            anim.transform.parent.gameObject.SetActive(true);
+            anim.SetBool("isEmpty", false);
             trigger.SetActive(false);
         }
     }

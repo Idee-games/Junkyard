@@ -19,7 +19,7 @@ public class LevelsManager : MonoBehaviour
     {
         //if (testMode)
             StartLevelHandling();
-        Application.targetFrameRate = 120;
+        Application.targetFrameRate = 100;
     }
 
     public void StartLevelHandling() {

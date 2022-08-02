@@ -32,5 +32,5 @@ public class LevelData : ScriptableObject
     private EnvProfile envProfile;
 
 
-    public int levelCompleteInt;
+    public int truckIndex;
 }

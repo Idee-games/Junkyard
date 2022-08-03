@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    void Update()
+    void FixedUpdate()
     {
 
         movementInput = CnControls.CnInputManager.GetAxis("Horizontal") * Vector3.right +
@@ -48,21 +48,22 @@ public class PlayerController : MonoBehaviour
             {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(movementInput), Time.deltaTime * 180);
 
-                  playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 5000);
+                 // playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 5000);
             }
             else
             {
-                 playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, movementInput * 10, Time.deltaTime * 5000);
+                 //playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, movementInput * 10, Time.deltaTime * 5000);
             }
         }
         else
         {
-             playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 5000);
+          //  playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, Vector3.zero, Time.deltaTime * 5000);
         }
 
         Vector3 velocity = playerRigidbody.velocity;
         velocity.y = y;
         playerRigidbody.velocity = velocity;
+        playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, movementInput * 10, Time.deltaTime * playerSpeed);
     }
     private void Start()
     {
@@ -84,12 +85,9 @@ public class PlayerController : MonoBehaviour
       //  anim = models[index].GetComponent<Animator>();
     }
 
-    void FixedUpdate()
+    private void Update()
     {
         PlayerMovement();
-       // Debug.Log(CnControls.CnInputManager.GetAxis("Horizontal"));
-
-        // GatherTimeHandling();
     }
 
     private void GatherTimeHandling()
@@ -115,8 +113,8 @@ public class PlayerController : MonoBehaviour
         //}
 
         Vector3 move = new Vector3(CnControls.CnInputManager.GetAxis("Horizontal"), 0, CnControls.CnInputManager.GetAxis("Vertical"));
-       // transform.Translate(move * Time.deltaTime * playerSpeed, Space.World);
-       
+        //transform.Translate(move * Time.deltaTime * playerSpeed, Space.World);
+        
         // playerRigidbody.AddForce(move * Time.deltaTime * playerSpeed, ForceMode.VelocityChange);
         // transform.LookAt(new Vector3();
         if (CnControls.CnInputManager.GetAxis("Horizontal") != 0 || CnControls.CnInputManager.GetAxis("Vertical") != 0)

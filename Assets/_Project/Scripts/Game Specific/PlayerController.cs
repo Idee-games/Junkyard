@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerSpeed = 2.0f;
     [SerializeField] private float playerRotate = 2.0f;
     private float gravityValue = -9.81f;
-
+    private LevelData curLevelData;
 
     //  public Transform playerParent;
     //public PlayerResources[] resources;
@@ -69,8 +69,12 @@ public class PlayerController : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody>();
         // playerRigidbody.freezeRotation = true;
-      //  index = Toolbox.DB.prefs.LastSelectedPlayerObj;
-        index = Toolbox.GameplayScript.levelsManager.CurLevelData.truckIndex;
+        //  index = Toolbox.DB.prefs.LastSelectedPlayerObj;
+        string path;
+        path = Constants.PrefabFolderPath + Constants.LevelsScriptablesFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
+        curLevelData = (LevelData)Resources.Load(path);
+        Debug.Log(curLevelData.truckIndex);
+        index = curLevelData.truckIndex;
         EnableCharacter(index);
     }
 

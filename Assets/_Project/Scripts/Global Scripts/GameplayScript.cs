@@ -5,7 +5,8 @@
 public class GameplayScript : MonoBehaviour {
     public bool testMode = true;
     public bool isLevelsScene = true;
-
+    public GameObject playerController;
+    public GameObject playerControllerTransformer;
     public bool levelCompleted = false;
     public bool levelFailed = false;
     public int counterJunk;
@@ -37,7 +38,7 @@ public class GameplayScript : MonoBehaviour {
 
     [Header("Truck")]
     public bool truckON;
-
+    private LevelData curLevelData;
     //screenshot requirement
     int screenShotPicName = 0;
 
@@ -45,10 +46,21 @@ public class GameplayScript : MonoBehaviour {
     public bool DoubleRewardBought { get => doubleRewardBought; set => doubleRewardBought = value; }
 
     void Awake() {
-
+        string path;
+        path = Constants.PrefabFolderPath + Constants.LevelsScriptablesFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
+        curLevelData = (LevelData)Resources.Load(path);
         //if (!FindObjectOfType<Toolbox>())
         //    Instantiate(Resources.Load("Toolbox"), Vector3.zero, Quaternion.identity);
-
+        if (curLevelData.isTransformer)
+        {
+            playerControllerTransformer.SetActive(true);
+            playerCamMachine.Follow = playerControllerTransformer.transform;
+        }
+        else 
+        {
+            playerController.SetActive(true);
+            playerCamMachine.Follow = playerController.transform;
+        }
         Toolbox.Set_GameplayScript(this.GetComponent<GameplayScript>());
     }
 

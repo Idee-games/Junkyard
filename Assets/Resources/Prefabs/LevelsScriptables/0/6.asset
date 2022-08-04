@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9492b67302df428665f63dbcea5e9, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  environmentNumber: 2
+  environmentNumber: 0
   ShowTutorial: 1
   time: 245
-  hasResources: 010000000200000003000000
+  hasResources: 
   disaster: 2
   weather: 0
   isNight: 0
   hasExtras: 0
   truckOn: 1
   bgSound: {fileID: 0}
+  truckIndex: 0

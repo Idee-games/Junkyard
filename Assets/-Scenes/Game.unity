@@ -60522,6 +60522,10 @@ MonoBehaviour:
   - {fileID: 1056955553}
   - {fileID: 341201090}
   playerSpeed: 6
+  isGathering: 0
+  junkPrefab: {fileID: 1233045427168455261, guid: 8e38636f2c7f2284ead6223256889d87,
+    type: 3}
+  gatherDelay: 1.8
 --- !u!4 &1819073638
 Transform:
   m_ObjectHideFlags: 0

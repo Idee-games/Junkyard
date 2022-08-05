@@ -32,6 +32,6 @@ public class LevelData : ScriptableObject
     private EnvProfile envProfile;
 
     public bool isTransformer = false;
-
+    public float progressPic;
     public int truckIndex;
 }

@@ -80,7 +80,18 @@ public class HUDListner : MonoBehaviour {
             {
                 startTime = false;
                 // Toolbox.GameManager.Instantiate_LevelComplete(0);
-                Toolbox.GameplayScript.FinalDecisionHandling(1f);
+
+
+
+                if(Toolbox.GameplayScript.levelsManager.CurLevelData.isTransformer)
+                {
+                    Toolbox.GameplayScript.LevelFailHandling();
+                }
+                else
+                {
+                    Toolbox.GameplayScript.FinalDecisionHandling(1f);
+                }
+              
 
 
 

@@ -58,6 +58,7 @@ public class MagneticController : MonoBehaviour
         {
             if (!onFactory)
             {
+                Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.gatherIronPick);
                 transform.parent = player;
                 movetotrunk = false;
                 //speed = 0f;
@@ -71,6 +72,7 @@ public class MagneticController : MonoBehaviour
            Destroy(transform.GetComponent<MeshCollider>());
             //move.isKinematic = false;
             movetoFactory = true;
+            Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.BrickFactory);
             transform.parent = factory;
             Debug.Log(transform.parent);
             player.GetComponent<MagnetObject>().trigger.SetActive(true);
@@ -79,13 +81,14 @@ public class MagneticController : MonoBehaviour
         }
         if (other.CompareTag("Factory"))
         {
-           // move.isKinematic = true;
-            
-            
+            Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.BrickFactory);
+            // move.isKinematic = true;
+
+
             //movetoFactory = false;
-          //  player.GetComponent<MagnetObject>().magnetOn = true;
-           
-            
+            //  player.GetComponent<MagnetObject>().magnetOn = true;
+
+
         }
     }
     public void Des()

@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 109, y: 126.82727}
+  m_AnchoredPosition: {x: 109, y: 126.82715}
   m_SizeDelta: {x: 497.5736, y: 101.7274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87539494
@@ -849,7 +849,7 @@ PrefabInstance:
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: running
       value: 
-      objectReference: {fileID: 8300000, guid: 8bf0b8d769f51f649a661748c907f95d, type: 3}
+      objectReference: {fileID: 8300000, guid: 1a286b0b65d3b174bae53278a4d840f2, type: 3}
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: complete
       value: 
@@ -885,7 +885,7 @@ PrefabInstance:
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: BrickFactory
       value: 
-      objectReference: {fileID: 8300000, guid: 0b0c7ca9691f40c4cb29904e3de6ee29, type: 3}
+      objectReference: {fileID: 8300000, guid: 235bcb2b9cd629f44a6e345b64d87eab, type: 3}
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: gatherCement
       value: 
@@ -917,7 +917,7 @@ PrefabInstance:
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: gatherIronPick
       value: 
-      objectReference: {fileID: 8300000, guid: e57b204b45d5d2a4890a3b6afddcd9dc, type: 3}
+      objectReference: {fileID: 8300000, guid: fa92f1d212318694f9acbde9470fcd0d, type: 3}
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: vehicleUpgrade
       value: 

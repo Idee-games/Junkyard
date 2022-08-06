@@ -7,6 +7,7 @@ public class PlayerControllerTransformer : MonoBehaviour
     public CharacterController controller;
     private Animator anim;
     public GameObject[] models;
+    public AudioClip hitTheCar;
     private int index = 0;
     private bool run = false;
     private Vector3 playerVelocity;
@@ -52,7 +53,7 @@ public class PlayerControllerTransformer : MonoBehaviour
     {
         if (!isGathering && a)
         {
-
+            Toolbox.Soundmanager.PlaySound(hitTheCar);
             isGathering = true;
             int i = 0;
             i = Random.Range(0, 2);

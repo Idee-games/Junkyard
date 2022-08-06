@@ -252,7 +252,7 @@ public class GameManager : MonoBehaviour {
     }
 	public void Instantiate_RewardAnim()
 	{
-		Instantiate((GameObject)Resources.Load(Constants.menuFolderPath + "Coins Effect"));
+		Instantiate((GameObject)Resources.Load(Constants.menuFolderPath + "Coins Effect 2"));
 	}
 
 	public void InstantiatePopup_Message(String str)

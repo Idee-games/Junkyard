@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MagneticController : MonoBehaviour
-{
+{ 
     bool counted = false;
     bool onFactory = false;
     Transform player;
@@ -13,6 +13,7 @@ public class MagneticController : MonoBehaviour
     bool movetotrunk = false;
     bool movetoFactory = false;
     Transform factory;
+    GameObject obj;
     float progress;
     // Use this for initialization
     void Start()
@@ -78,6 +79,9 @@ public class MagneticController : MonoBehaviour
             player.GetComponent<MagnetObject>().trigger.SetActive(true);
             player.GetComponent<MagnetObject>().anim.SetBool("isEmpty", true);
             Des();
+            //Invoke("RewardBox", 2f);
+            obj = Instantiate(FindObjectOfType<PlayerController>().rewardBox, factory.transform.position, Quaternion.identity) as GameObject;
+            obj.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-10.5f, 10.5f), 3, Random.Range(-10.5f, 10.5f)) * 50f);
         }
         if (other.CompareTag("Factory"))
         {
@@ -90,6 +94,10 @@ public class MagneticController : MonoBehaviour
 
 
         }
+    }
+    public void RewardBox()
+    {
+        obj = Instantiate(FindObjectOfType<PlayerController>().rewardBox, factory.transform.position, Quaternion.identity) as GameObject;
     }
     public void Des()
     {

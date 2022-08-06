@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
    // private Animator anim;
     public GameObject[] models;
     private int index = 0;
+    public GameObject rewardBox;
     private bool run = false;
     private Vector3 playerVelocity;
     private bool groundedPlayer;

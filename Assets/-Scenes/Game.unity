@@ -14068,6 +14068,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 341201088}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &341201091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341201090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47e210e68b3fd842b80bf4de3dec9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &355444310
 GameObject:
   m_ObjectHideFlags: 0
@@ -29867,6 +29879,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   models:
   - {fileID: 1474179721938688553}
+  rewardBox: {fileID: 4557201339910342975, guid: 579b17ea037d7f34397337847e889d05,
+    type: 3}
   playerSpeed: 100
   playerRotate: 2
 --- !u!1 &873370722
@@ -42613,6 +42627,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1056955551}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1056955554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056955553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47e210e68b3fd842b80bf4de3dec9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1075030288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44340,6 +44366,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1179045835}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1179045838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179045837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47e210e68b3fd842b80bf4de3dec9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1184555008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60792,6 +60830,7 @@ MonoBehaviour:
   - {fileID: 1179045837}
   - {fileID: 1056955553}
   - {fileID: 341201090}
+  hitTheCar: {fileID: 8300000, guid: 7d02dba9e1591ac4891684cc0f559a23, type: 3}
   playerSpeed: 6
   isGathering: 0
   junkPrefab: {fileID: 1233045427168455261, guid: 8e38636f2c7f2284ead6223256889d87,

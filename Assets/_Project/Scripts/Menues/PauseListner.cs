@@ -27,6 +27,7 @@ public class PauseListner : MonoBehaviour {
 
 	public void Press_Play(){
 		Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.buttonPressYes);
+		AdsManager.instance.ShowAd(AdsManager.AdType.INTERSTITIAL);
 		Toolbox.HUDListner.EnableHUD();
 
 

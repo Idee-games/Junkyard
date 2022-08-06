@@ -1837,14 +1837,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   showItemOnMenuEnable: 1
-  showAnimationType: 4
+  showAnimationType: 1
   hideAnimationType: 0
   animationFromCornerType: 0
   animationToCornerType: 0
   pivotWhileRotating: 0
   animationFromCornerStartFromType: 0
   fadeChildren: 1
-  animationShowDuration: 0.4
+  animationShowDuration: 0.5
   animationHideDuration: 0
   withDelay: 0
   showDelay: 1

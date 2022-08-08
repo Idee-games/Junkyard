@@ -921,7 +921,7 @@ PrefabInstance:
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: vehicleUpgrade
       value: 
-      objectReference: {fileID: 8300000, guid: 4f75aa1052b690046b579ee2762e132e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: vehicleExplosion
       value: 
@@ -929,7 +929,7 @@ PrefabInstance:
     - target: {fileID: 7471023796943984579, guid: ce968ffb37fd3924b9688c04e192b1ac,
         type: 3}
       propertyPath: m_Volume
-      value: 0.042
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 7471023796943984579, guid: ce968ffb37fd3924b9688c04e192b1ac,
         type: 3}

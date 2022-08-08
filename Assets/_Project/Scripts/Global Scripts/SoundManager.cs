@@ -152,4 +152,13 @@ public class SoundManager : MonoBehaviour {
 
 		vehicleRadio.Play();
 	}
+	public void pauseVehcileSound()
+    {
+		Running.Pause();
+	}
+	public void playVehcileSound()
+	{
+		Running.Play();
+	}
+
 }

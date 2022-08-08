@@ -394,7 +394,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1a286b0b65d3b174bae53278a4d840f2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.236
   m_Pitch: 1
@@ -885,7 +885,7 @@ PrefabInstance:
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: BrickFactory
       value: 
-      objectReference: {fileID: 8300000, guid: 235bcb2b9cd629f44a6e345b64d87eab, type: 3}
+      objectReference: {fileID: 8300000, guid: 40ba3794a93516b40bbf98452462f343, type: 3}
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: gatherCement
       value: 

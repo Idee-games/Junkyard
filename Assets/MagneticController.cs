@@ -79,13 +79,12 @@ public class MagneticController : MonoBehaviour
             player.GetComponent<MagnetObject>().trigger.SetActive(true);
             player.GetComponent<MagnetObject>().anim.SetBool("isEmpty", true);
             Des();
-            //Invoke("RewardBox", 2f);
-            obj = Instantiate(FindObjectOfType<PlayerController>().rewardBox, factory.transform.position, Quaternion.identity) as GameObject;
-            obj.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-10.5f, 10.5f), 3, Random.Range(-10.5f, 10.5f)) * 50f);
+            Invoke("RewardBox", 1f);
+            
         }
         if (other.CompareTag("Factory"))
         {
-            Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.BrickFactory);
+       //     Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.BrickFactory);
             // move.isKinematic = true;
 
 
@@ -97,7 +96,8 @@ public class MagneticController : MonoBehaviour
     }
     public void RewardBox()
     {
-        obj = Instantiate(FindObjectOfType<PlayerController>().rewardBox, factory.transform.position, Quaternion.identity) as GameObject;
+        obj = Instantiate(FindObjectOfType<PlayerController>().rewardBox, factory.transform.parent.transform.GetChild(0).transform.position, Quaternion.identity) as GameObject;
+        obj.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-20f, 20f), 1, Random.Range(-20f, 20f)) * 15f);
     }
     public void Des()
     {

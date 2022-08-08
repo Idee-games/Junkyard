@@ -22,3 +22,6 @@ MonoBehaviour:
   hasExtras: 0
   truckOn: 0
   bgSound: {fileID: 0}
+  isTransformer: 0
+  progressPic: 0.6
+  truckIndex: 0

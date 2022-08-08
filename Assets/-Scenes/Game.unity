@@ -29967,7 +29967,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 3
 --- !u!65 &870471386
 BoxCollider:
@@ -29990,7 +29990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870471384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.89, y: 8.35, z: -11.87}
+  m_LocalPosition: {x: 4.89, y: 8.54, z: -11.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2095437141}
@@ -43058,7 +43058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084605068}
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 4.89, y: 31.331337, z: -31.15363}
+  m_LocalPosition: {x: 4.89, y: 31.521338, z: -31.15363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1856514253}
@@ -58861,6 +58861,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1649889731}
     m_Modifications:
+    - target: {fileID: 577229764777985635, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 577229765668162098, guid: 9d2c158fba7feaa4197e4124c0640f9c,
         type: 3}
       propertyPath: m_Convex
@@ -58933,6 +58938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 577229765668162098, guid: 9d2c158fba7feaa4197e4124c0640f9c, type: 3}
+    - {fileID: 577229764953252155, guid: 9d2c158fba7feaa4197e4124c0640f9c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d2c158fba7feaa4197e4124c0640f9c, type: 3}
 --- !u!4 &1686649900 stripped
 Transform:
@@ -58955,10 +58961,10 @@ BoxCollider:
   m_GameObject: {fileID: 1686649901}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 11.000002, y: 2.9180188, z: 11.000001}
-  m_Center: {x: -5.5063987, y: -1.3361622, z: 5.4857717}
+  m_Center: {x: -5.5063987, y: -1.38, z: 5.4857717}
 --- !u!64 &1686649903
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -58968,11 +58974,49 @@ MeshCollider:
   m_GameObject: {fileID: 1686649901}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: b4e370f71c4a19941b138363f31b6717, type: 3}
+--- !u!1 &1686649904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 641033269964592103, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1686649899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1686649905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686649904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.999999, y: 2.7581694, z: 11.000001}
+  m_Center: {x: -5.5063977, y: -1.12, z: 5.4857817}
+--- !u!1 &1686649906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 641033269671867583, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1686649899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1686649907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686649906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.000002, y: 3.2467628, z: 11.000001}
+  m_Center: {x: -5.5064034, y: -1.525, z: 5.4857717}
 --- !u!1001 &1691579014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64793,7 +64837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084944066}
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 4.89, y: 31.331337, z: -31.15363}
+  m_LocalPosition: {x: 4.89, y: 31.521338, z: -31.15363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

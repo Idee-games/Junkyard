@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerRotate = 2.0f;
     private float gravityValue = -9.81f;
     private LevelData curLevelData;
-
+    bool sound = true;
     //  public Transform playerParent;
     //public PlayerResources[] resources;
 
@@ -65,9 +65,11 @@ public class PlayerController : MonoBehaviour
         velocity.y = y;
         playerRigidbody.velocity = velocity;
         playerRigidbody.velocity = Vector3.MoveTowards(playerRigidbody.velocity, movementInput * 10, Time.deltaTime * playerSpeed);
+        //UpdateMovement(movementInput);
     }
     private void Start()
     {
+        Toolbox.Soundmanager.pauseVehcileSound();
         playerRigidbody = GetComponent<Rigidbody>();
         // playerRigidbody.freezeRotation = true;
         //  index = Toolbox.DB.prefs.LastSelectedPlayerObj;
@@ -125,10 +127,21 @@ public class PlayerController : MonoBehaviour
         if (CnControls.CnInputManager.GetAxis("Horizontal") != 0 || CnControls.CnInputManager.GetAxis("Vertical") != 0)
         {
             models[index].GetComponent<TireController>().startRotate();
+            if(sound)
+            {
+                sound = false;
+                Toolbox.Soundmanager.playVehcileSound();
+            }
         }
         else
         {
             models[index].GetComponent<TireController>().stopRotate();
+            if (!sound)
+            {
+                Toolbox.Soundmanager.pauseVehcileSound();
+                sound = true;
+            }
+
         }
 
         //  // Direction pointing to
@@ -148,25 +161,26 @@ public class PlayerController : MonoBehaviour
         //playerVelocity.y += gravityValue * Time.deltaTime;
         //transform.Translate(playerVelocity * Time.deltaTime);
 
-        //   UpdateMovement(move);
+          // UpdateMovement(move);
     }
+    
 
+    //private void UpdateMovement(Vector3 _mov) {
 
-    private void UpdateMovement(Vector3 _mov) {
+    //    if (_mov.x != 0 || _mov.z != 0)
+    //    {
+    //        run = true;
+    //        Toolbox.Soundmanager.playVehcileSound();
+    //    }
+    //    else {
 
-        if (_mov.x != 0 || _mov.z != 0)
-        {
-            run = true;
-            //Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.running);
-        }
-        else {
+    //        Toolbox.Soundmanager.pauseVehcileSound();
+    //        run = false;
+    //    }
 
-            run = false;
-        }
+    //  //  anim.SetBool("Run", run);
 
-      //  anim.SetBool("Run", run);
-
-    }
+    //}
 
   
 

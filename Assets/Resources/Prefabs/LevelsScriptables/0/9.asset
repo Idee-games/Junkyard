@@ -20,5 +20,8 @@ MonoBehaviour:
   weather: 0
   isNight: 0
   hasExtras: 0
-  truckOn: 1
+  truckOn: 0
   bgSound: {fileID: 0}
+  isTransformer: 0
+  progressPic: 0.3
+  truckIndex: 0

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class LevelCompleteListner : MonoBehaviour {
 
-	public GameObject nextButton;
+	//public GameObject nextButton;
 	public GameObject doubleRewardButton;
 	public GameObject pressHome;
 	public GameObject pressReplay;
@@ -148,10 +148,10 @@ public class LevelCompleteListner : MonoBehaviour {
 		//rewardTxt.text = levelReward.ToString();
 		//Toolbox.DB.prefs.GoldCoins += levelReward;
 	}
-	public void ShowNoThanksBtb()
-    {
-		nextButton.SetActive(true);
-    }
+	//public void ShowNoThanksBtb()
+ //   {
+	//	nextButton.SetActive(true);
+ //   }
 	public void Press_Next()
 	{
 		if (Toolbox.DB.prefs.LastSelectedLevel < Constants.maxLevelsOfMode[Toolbox.DB.prefs.LastSelectedMode]-1)

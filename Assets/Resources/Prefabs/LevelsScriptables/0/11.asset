@@ -24,4 +24,4 @@ MonoBehaviour:
   bgSound: {fileID: 0}
   isTransformer: 1
   progressPic: 1
-  truckIndex: 0
+  truckIndex: 2

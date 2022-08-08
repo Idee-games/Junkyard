@@ -19,14 +19,20 @@ public class PlayerControllerTransformer : MonoBehaviour
     float time = 0;
     public float gatherDelay = 1.8f;
     GameObject obj;
-    bool a;
+    bool a; 
+    private LevelData curLevelData;
 
     GameObject brokenCar;
 
 
     private void Start()
     {
-        index = Toolbox.DB.prefs.LastSelectedPlayerObj;
+        string path;
+        path = Constants.PrefabFolderPath + Constants.LevelsScriptablesFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
+        curLevelData = (LevelData)Resources.Load(path);
+        Debug.Log(curLevelData.truckIndex);
+        index = curLevelData.truckIndex;
+        
         EnableCharacter(index);
     }
 

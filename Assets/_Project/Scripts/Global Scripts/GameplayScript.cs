@@ -97,14 +97,14 @@ public class GameplayScript : MonoBehaviour {
     {
         Toolbox.HUDListner.EnableHUD();
         Toolbox.HUDListner.StartTime(levelsManager.CurLevelData.time);
-
+        Debug.Log(levelsManager.CurLevelData.time);
         Toolbox.Soundmanager.PlayBGSound(Toolbox.Soundmanager.gameBG);
     }
 
     public void EnableEnvHandling(int _val)
     {
         environments[_val].gameObject.SetActive(true);
-        
+       
     }
 
     public void IncrementGoldCoins(int cost)

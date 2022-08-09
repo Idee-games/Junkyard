@@ -22692,9 +22692,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 113, y: -55}
+  m_AnchoredPosition: {x: 37, y: -10.699951}
   m_SizeDelta: {x: 61, y: 83}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &684638596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71065,7 +71065,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -6.1453}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &654372393082546628
 CanvasRenderer:
@@ -75181,7 +75181,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 5.5}
   m_SizeDelta: {x: 83, y: 83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5008495820081805919
@@ -75910,26 +75910,6 @@ MonoBehaviour:
   resourcesParent: {fileID: 4227779182866850534}
   progressbar: {fileID: 7475405606684476089}
   progress: 0
-  resourcesTxts:
-  - {fileID: 3033150237310065253}
-  - {fileID: 168600889742344342}
-  - {fileID: 5952637845161111248}
-  - {fileID: 2885270760989861946}
-  - {fileID: 6332278596478965179}
-  - {fileID: 1980318171436942559}
-  - {fileID: 7205897652363336249}
-  - {fileID: 3852239545168648203}
-  - {fileID: 207574631}
-  resourcePosition:
-  - {fileID: 250812583729205576}
-  - {fileID: 6429382804142898782}
-  - {fileID: 2694952417529239500}
-  - {fileID: 3368810074853359974}
-  - {fileID: 187121463586190192}
-  - {fileID: 609494405002896708}
-  - {fileID: 8526439973845031917}
-  - {fileID: 1699996061441760885}
-  - {fileID: 843698421}
 --- !u!222 &6855577316471136246
 CanvasRenderer:
   m_ObjectHideFlags: 0

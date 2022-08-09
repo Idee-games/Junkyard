@@ -8,5 +8,7 @@ public class LevelHandler : MonoBehaviour
 
     public GameObject tutorials;
 
+    public GameObject junkPrefab;
+
     public int levelCompleteInt;
 }

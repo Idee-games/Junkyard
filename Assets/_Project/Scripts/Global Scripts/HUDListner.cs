@@ -12,9 +12,9 @@ public class HUDListner : MonoBehaviour {
     public Image progressbar;
     [HideInInspector]public float progress;
     [Tooltip("Should be in the order of resources")]
-    public Text[] resourcesTxts;
+    //public Text[] resourcesTxts;
 
-    public RectTransform [] resourcePosition;
+    //public RectTransform [] resourcePosition;
     float reportTime = 10;
 
     public bool startTime { get; set; }
@@ -49,10 +49,11 @@ public class HUDListner : MonoBehaviour {
 
     private void HandleTime()
     {
+      
         if (startTime)
         {
             reportTime -= Time.deltaTime;
-
+            
             tempTime -= Time.deltaTime;
             timeTxt.transform.parent.gameObject.SetActive(true);
             int roundedSec = Mathf.RoundToInt(tempTime);
@@ -60,7 +61,7 @@ public class HUDListner : MonoBehaviour {
             int seconds = roundedSec - (min * 60);
 
             timeTxt.text = String.Format("{0:D2} : {1:D2}", min, seconds);
-
+            
             //Debug.LogError("roundedSec = " + roundedSec);
 
             //if (reportTime <= 0) {

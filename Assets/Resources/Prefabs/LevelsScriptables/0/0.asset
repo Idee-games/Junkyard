@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   environmentNumber: 0
-  ShowTutorial: 1
+  ShowTutorial: 0
   time: 122
   hasResources: 00000000
   disaster: 4
@@ -22,4 +22,7 @@ MonoBehaviour:
   hasExtras: 0
   truckOn: 0
   bgSound: {fileID: 0}
-  levelCompleteInt: 20
+  isTransformer: 0
+  progressPic: 0
+  magnetPower: 10
+  truckIndex: 0

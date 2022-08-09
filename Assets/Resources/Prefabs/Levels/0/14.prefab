@@ -183,7 +183,8 @@ MonoBehaviour:
   playerSpawnPoint: {fileID: 69807764582323743}
   houseObj: {fileID: 115114697851105010}
   tutorials: {fileID: 4074384730379607945}
-  levelCompleteInt: 41
+  junkPrefab: {fileID: 9146570613056509738}
+  levelCompleteInt: 100
 --- !u!1 &4074384730379607945
 GameObject:
   m_ObjectHideFlags: 0

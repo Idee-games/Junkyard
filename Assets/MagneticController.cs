@@ -18,7 +18,8 @@ public class MagneticController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-       // move = GetComponent<Rigidbody>();
+        Toolbox.GameplayScript.levelsManager.CurLevelHandler.levelCompleteInt = Toolbox.GameplayScript.levelsManager.CurLevelHandler.junkPrefab.transform.childCount - 5;
+        // move = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Magnet").transform;
         factory = GameObject.FindGameObjectWithTag("Factory").transform;
     }
@@ -79,7 +80,7 @@ public class MagneticController : MonoBehaviour
             player.GetComponent<MagnetObject>().trigger.SetActive(true);
             player.GetComponent<MagnetObject>().anim.SetBool("isEmpty", true);
             Des();
-            Invoke("RewardBox", 1f);
+          //  Invoke("RewardBox", 1f);
             
         }
         if (other.CompareTag("Factory"))

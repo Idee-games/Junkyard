@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9492b67302df428665f63dbcea5e9, type: 3}
   m_Name: 13
   m_EditorClassIdentifier: 
-  environmentNumber: 1
+  environmentNumber: 0
   ShowTutorial: 0
   time: 60
   hasResources: 
@@ -24,4 +24,5 @@ MonoBehaviour:
   bgSound: {fileID: 0}
   isTransformer: 0
   progressPic: 0.5
+  magnetPower: 25
   truckIndex: 0

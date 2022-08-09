@@ -21,11 +21,12 @@ public class PlayerControllerTransformer : MonoBehaviour
     GameObject obj;
     bool a; 
     private LevelData curLevelData;
-
+    private LevelHandler curLevelHandler;
+    float progress;
     GameObject brokenCar;
+    int count;
 
-
-    private void Start()
+    void Start()
     {
         string path;
         path = Constants.PrefabFolderPath + Constants.LevelsScriptablesFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
@@ -33,6 +34,16 @@ public class PlayerControllerTransformer : MonoBehaviour
         Debug.Log(curLevelData.truckIndex);
         index = curLevelData.truckIndex;
         
+        
+        
+        string path2 = Constants.PrefabFolderPath + Constants.LevelsFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
+        Toolbox.GameManager.Log("Lvl path = " + path2);
+
+        GameObject obj = (GameObject)Resources.Load(path2);
+
+        curLevelHandler = obj.GetComponent<LevelHandler>();
+        curLevelHandler.levelCompleteInt = curLevelHandler.junkPrefab.transform.childCount;
+        Debug.Log(curLevelHandler.junkPrefab.transform.childCount);
         EnableCharacter(index);
     }
 
@@ -85,9 +96,11 @@ public class PlayerControllerTransformer : MonoBehaviour
         brokenCar.GetComponent<BrokenCar>().anim.SetInteger("State", brokenCar.GetComponent<BrokenCar>()._val);
         if (brokenCar.GetComponent<BrokenCar>()._val == 0)
         {
+            count++;
             a = false;
             Destroy(brokenCar);
-
+            progress = ((float)count / (float)curLevelHandler.levelCompleteInt);
+            Toolbox.HUDListner.SetProgressBarFill(progress);
         }
         obj = Instantiate(junkPrefab, brokenCar.transform.position, Quaternion.identity) as GameObject;
         obj.transform.parent = null;

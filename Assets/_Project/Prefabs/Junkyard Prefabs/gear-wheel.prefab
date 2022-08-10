@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5fe0aebe85b574b4a94e74712f0aa915, type: 2}
+  - {fileID: 2100000, guid: 284c356f2f17a644380d230a1abff44b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -210,6 +210,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1556523994002227253, guid: 841c142e7f258d141aea36f81f453d0f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 284c356f2f17a644380d230a1abff44b, type: 2}
     - target: {fileID: 4760595816021947322, guid: 841c142e7f258d141aea36f81f453d0f,
         type: 3}
       propertyPath: m_Convex
@@ -306,6 +311,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1556523994002227253, guid: 841c142e7f258d141aea36f81f453d0f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 284c356f2f17a644380d230a1abff44b, type: 2}
     - target: {fileID: 4760595816021947322, guid: 841c142e7f258d141aea36f81f453d0f,
         type: 3}
       propertyPath: m_Convex
@@ -402,6 +412,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1556523994002227253, guid: 841c142e7f258d141aea36f81f453d0f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 284c356f2f17a644380d230a1abff44b, type: 2}
     - target: {fileID: 4760595816021947322, guid: 841c142e7f258d141aea36f81f453d0f,
         type: 3}
       propertyPath: m_Convex
@@ -498,6 +513,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1556523994002227253, guid: 841c142e7f258d141aea36f81f453d0f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 284c356f2f17a644380d230a1abff44b, type: 2}
     - target: {fileID: 4760595816021947322, guid: 841c142e7f258d141aea36f81f453d0f,
         type: 3}
       propertyPath: m_Convex

@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5fe0aebe85b574b4a94e74712f0aa915, type: 2}
+  - {fileID: 2100000, guid: 700ae469e5be9ac4095d29b97116027a, type: 2}
   - {fileID: 2100000, guid: c48ed0c67054fc24da0ac1cced5a308c, type: 2}
   - {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
   m_StaticBatchInfo:
@@ -200,6 +200,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ice-axe (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5833691629787843375, guid: 9db43aa4c34b6df46a60329547372988,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 700ae469e5be9ac4095d29b97116027a, type: 2}
     m_RemovedComponents:
     - {fileID: 2265842671820518996, guid: 9db43aa4c34b6df46a60329547372988, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9db43aa4c34b6df46a60329547372988, type: 3}
@@ -281,6 +286,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ice-axe (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5833691629787843375, guid: 9db43aa4c34b6df46a60329547372988,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 700ae469e5be9ac4095d29b97116027a, type: 2}
     m_RemovedComponents:
     - {fileID: 2265842671820518996, guid: 9db43aa4c34b6df46a60329547372988, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9db43aa4c34b6df46a60329547372988, type: 3}

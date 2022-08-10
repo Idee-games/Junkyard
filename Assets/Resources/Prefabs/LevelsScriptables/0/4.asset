@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9492b67302df428665f63dbcea5e9, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  environmentNumber: 0
+  environmentNumber: 1
   ShowTutorial: 0
   time: 245
   hasResources: 000000000400000005000000

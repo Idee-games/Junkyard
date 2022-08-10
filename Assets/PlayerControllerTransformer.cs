@@ -101,6 +101,10 @@ public class PlayerControllerTransformer : MonoBehaviour
             Destroy(brokenCar);
             progress = ((float)count / (float)curLevelHandler.levelCompleteInt);
             Toolbox.HUDListner.SetProgressBarFill(progress);
+            if (progress >= 0.5f)
+            {
+                Toolbox.HUDListner.progressbar.color = Color.green;
+            }
         }
         obj = Instantiate(junkPrefab, brokenCar.transform.position, Quaternion.identity) as GameObject;
         obj.transform.parent = null;

@@ -115,7 +115,7 @@ public class MagneticController : MonoBehaviour
             Toolbox.HUDListner.SetProgressBarFill(progress);
             if(progress >= 0.5f)
             {
-                Toolbox.HUDListner.progressbar.color = Color.red;
+                Toolbox.HUDListner.progressbar.color = Color.green;
             }
             counted = true;
 

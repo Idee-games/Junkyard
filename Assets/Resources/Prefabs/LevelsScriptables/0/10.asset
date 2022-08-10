@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   environmentNumber: 0
   ShowTutorial: 0
-  time: 60
+  time: 100
   hasResources: 00000000
   disaster: 3
   weather: 0

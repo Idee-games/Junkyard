@@ -52,7 +52,18 @@ public class LevelsManager : MonoBehaviour
 
     private void InstantiateLevel()
     {
-        Toolbox.GameManager.InstantiatePopup_MessageTransformer();
+        string path2;
+        path2 = Constants.PrefabFolderPath + Constants.LevelsScriptablesFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
+        curLevelData = (LevelData)Resources.Load(path2);
+        if (curLevelData.isTransformer)
+        {
+            Toolbox.GameManager.InstantiatePopup_MessageTransformerMade();
+        }
+        else
+        {
+            Toolbox.GameManager.InstantiatePopup_MessageTransformer();
+        }
+     
         Time.timeScale = 1f;
         string path = Constants.PrefabFolderPath + Constants.LevelsFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
         Toolbox.GameManager.Log("Lvl path = " + path);

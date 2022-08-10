@@ -7,7 +7,10 @@ public class PopupMsgListner : MonoBehaviour
 {
     public Text msgTxt;
     public GameObject unlockBtn;
+    public GameObject Shine;
+    public GameObject Unlock;
     public bool isPopupMsg = false;
+    LevelData shineShow;
     public void UpdateMsg(string str) {
 
         msgTxt.text = str;
@@ -17,6 +20,17 @@ public class PopupMsgListner : MonoBehaviour
     {
         if(isPopupMsg) Invoke("PauseTime", 1.2f);
     }
+    private void Start()
+    {
+        string path;
+        path = Constants.PrefabFolderPath + Constants.LevelsScriptablesFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
+        shineShow = (LevelData)Resources.Load(path);
+        if (shineShow.progressPic == 1f)
+        {
+            Unlock.SetActive(true);
+            Shine.SetActive(true);
+        }
+    } 
 
     public void OnPress_Close() {
 

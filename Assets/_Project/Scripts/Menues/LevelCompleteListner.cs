@@ -80,7 +80,7 @@ public class LevelCompleteListner : MonoBehaviour {
     {
 		rewardAmount = 1 * 100;
 		levelEarningTxt.text = "+" + rewardAmount.ToString();
-		Toolbox.GameplayScript.IncrementGoldCoins(rewardAmount);
+		//Toolbox.GameplayScript.IncrementGoldCoins(rewardAmount);
     }
 
     IEnumerator StartAnimation() {

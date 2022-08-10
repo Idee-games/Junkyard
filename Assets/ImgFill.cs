@@ -5,13 +5,29 @@ using UnityEngine.UI;
 
 public class ImgFill : MonoBehaviour
 {
+    private LevelData curLevelData;
+    public Sprite[] imgs;
+    public Sprite[] imgsBG;
+
+    public Image imgforthere;
+    public Image imgforthereBG;
     Image img;
     float fill;
     // Start is called before the first frame update
     void Start()
     {
-       fill =  Toolbox.GameplayScript.levelsManager.CurLevelData.progressPic;
-        img = GetComponent<Image>();
+        string path;
+        path = Constants.PrefabFolderPath + Constants.LevelsScriptablesFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
+        curLevelData = (LevelData)Resources.Load(path);
+
+
+        imgforthere.sprite = imgs[curLevelData.transformerIMGIndex];
+        imgforthereBG.sprite = imgsBG[curLevelData.transformerIMGIndex];
+
+
+
+        fill =  Toolbox.GameplayScript.levelsManager.CurLevelData.progressPic;
+        img = imgforthere;
 
       
     }

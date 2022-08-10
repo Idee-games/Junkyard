@@ -26,3 +26,4 @@ MonoBehaviour:
   progressPic: 1
   magnetPower: 10
   truckIndex: 2
+  transformerIMGIndex: 2

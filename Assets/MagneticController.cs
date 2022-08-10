@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MagneticController : MonoBehaviour
-{ 
+{
     bool counted = false;
     bool onFactory = false;
     Transform player;
     public float distance;
-   // Rigidbody move;
+    // Rigidbody move;
     float speed = 20f;
     bool movetotrunk = false;
     bool movetoFactory = false;
     Transform factory;
     GameObject obj;
     float progress;
+    bool moveto = false;
     // Use this for initialization
     void Start()
     {
@@ -33,10 +34,15 @@ public class MagneticController : MonoBehaviour
         //    //transform.position = (player.transform.position - transform.position) * Time.deltaTime * speed;
         //    move.AddForce((player.transform.position - transform.position) * (14));
         //}
-
-        if(movetotrunk)
+        if (moveto)
         {
-            transform.position = Vector3.MoveTowards(transform.position , player.transform.position, 28f * Time.deltaTime);
+            transform.Translate(Vector3.back * Time.deltaTime * 0.8f, Space.World);
+        }
+
+
+        if (movetotrunk)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 28f * Time.deltaTime);
             //move.AddForce((factory.transform.position - transform.position) * (16));
         }
         if (movetoFactory)
@@ -48,7 +54,7 @@ public class MagneticController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if(other.CompareTag("MagnetRange"))
+        if (other.CompareTag("MagnetRange"))
         {
             if (!onFactory)
             {
@@ -71,7 +77,7 @@ public class MagneticController : MonoBehaviour
         {
 
             onFactory = true;
-           Destroy(transform.GetComponent<MeshCollider>());
+            Destroy(transform.GetComponent<MeshCollider>());
             //move.isKinematic = false;
             movetoFactory = true;
             Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.BrickFactory);
@@ -80,12 +86,12 @@ public class MagneticController : MonoBehaviour
             player.GetComponent<MagnetObject>().trigger.SetActive(true);
             player.GetComponent<MagnetObject>().anim.SetBool("isEmpty", true);
             Des();
-          //  Invoke("RewardBox", 1f);
-            
+            //  Invoke("RewardBox", 1f);
+
         }
         if (other.CompareTag("Factory"))
         {
-       //     Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.BrickFactory);
+            //     Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.BrickFactory);
             // move.isKinematic = true;
 
 
@@ -108,14 +114,22 @@ public class MagneticController : MonoBehaviour
             progress = ((float)Toolbox.GameplayScript.counterJunk / (float)Toolbox.GameplayScript.levelsManager.CurLevelHandler.levelCompleteInt);
             Toolbox.HUDListner.SetProgressBarFill(progress);
             counted = true;
-            
+
         }
         if (Toolbox.GameplayScript.levelsManager.CurLevelHandler.levelCompleteInt <= Toolbox.GameplayScript.counterJunk)
         {
             Toolbox.GameplayScript.LevelCompleteHandling();
         }
         Debug.Log("Destroyeddd");
-        Destroy(gameObject, 2f);
+        Invoke("Moveee", 2f);
+        
+        Destroy(gameObject, 4.5f);
+    }
+    public void Moveee()
+    {
+        movetoFactory = false;
+        transform.tag = "JUNKTO";
+        moveto = true;
     }
 }
 

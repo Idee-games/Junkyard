@@ -30,7 +30,11 @@ public class HUDListner : MonoBehaviour {
     {        
         uiParent.SetActive(false);
     }
-
+    public void OnPress_Settings()
+    {
+        Toolbox.Soundmanager.PlaySound(Toolbox.Soundmanager.Select);
+        Toolbox.GameManager.Instantiate_SettingsMenu();
+    }
     public void EnableHUD()
     {
         uiParent.SetActive(true);

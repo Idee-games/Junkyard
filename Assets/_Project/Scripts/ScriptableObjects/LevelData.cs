@@ -35,4 +35,5 @@ public class LevelData : ScriptableObject
     public float progressPic;
     public int magnetPower;
     public int truckIndex;
+    public int transformerIMGIndex;
 }

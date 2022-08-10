@@ -27,7 +27,7 @@ public class MainMenuListner : MonoBehaviour {
 
     public void UpdateTxt(){
 
-		lvlTxt.text = "Level " + (Toolbox.DB.prefs.LastSelectedLevel + 1).ToString();
+		lvlTxt.text = (Toolbox.DB.prefs.LastSelectedLevel + 1).ToString();
 		goldTxt.text = Toolbox.DB.prefs.GoldCoins.ToString();
 
 	}

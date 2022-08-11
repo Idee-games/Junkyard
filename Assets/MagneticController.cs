@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MagneticController : MonoBehaviour
 {
+    
     bool counted = false;
     bool onFactory = false;
     Transform player;
@@ -53,7 +54,12 @@ public class MagneticController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-
+       
+       if (other.CompareTag("FactorySmash"))
+       {
+            Instantiate(player.GetComponent<MagnetObject>().effect, new Vector3(transform.position.x,transform.position.y + 0.4f, transform.position.z) , Quaternion.identity);
+       }
+        
         if (other.CompareTag("MagnetRange"))
         {
             if (!onFactory)
@@ -116,6 +122,10 @@ public class MagneticController : MonoBehaviour
             if(progress >= 0.5f)
             {
                 Toolbox.HUDListner.progressbar.color = Color.green;
+            }
+            if (progress >= 0.9f)
+            {
+                Toolbox.HUDListner.progressbar.transform.GetChild(0).gameObject.SetActive(true) ;
             }
             counted = true;
 

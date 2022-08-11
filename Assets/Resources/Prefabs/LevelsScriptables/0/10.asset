@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9492b67302df428665f63dbcea5e9, type: 3}
   m_Name: 10
   m_EditorClassIdentifier: 
-  environmentNumber: 1
+  environmentNumber: 0
   ShowTutorial: 0
-  time: 100
+  time: 115
   hasResources: 00000000
   disaster: 3
   weather: 0

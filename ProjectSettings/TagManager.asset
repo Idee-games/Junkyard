@@ -28,6 +28,7 @@ TagManager:
   - FactoryRange
   - MagnetRange
   - JUNKTO
+  - FactorySmash
   layers:
   - Default
   - TransparentFX

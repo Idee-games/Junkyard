@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour {
 		GameAnalytics.Initialize();
 
 		//AddNotificationChannel();
-
+		
 		if (Toolbox.DB.prefs.FirstRun)
 		{
 			Instantiate_Consent();

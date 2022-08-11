@@ -20,7 +20,7 @@ public class SmashingController : MonoBehaviour
     {
         if (other.CompareTag("JUNKTO"))
         {
-            Instantiate(effetc, transform.GetChild(0).transform.position, Quaternion.identity);
+           // Instantiate(effetc, transform.GetChild(0).transform.position, Quaternion.identity);
         }
     }
 }

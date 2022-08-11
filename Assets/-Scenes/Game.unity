@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &50650312
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -242,7 +242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &83963113
 Transform:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &89829108
 Transform:
   m_ObjectHideFlags: 0
@@ -519,7 +519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &154449430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -612,6 +612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-broken
       objectReference: {fileID: 0}
+    - target: {fileID: 1605575077324966, guid: 4ce5810d97c334666aac7e6a21a6fda3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4867975337336814, guid: 4ce5810d97c334666aac7e6a21a6fda3, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -701,7 +705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &172970501
 Transform:
   m_ObjectHideFlags: 0
@@ -793,6 +797,10 @@ PrefabInstance:
     - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
       propertyPath: m_Name
       value: SM_Veh_Truck_01_DumpsterTray (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5836,6 +5844,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3ffee79eaada48e4bb0d14455a4e6f53, type: 2}
+    - target: {fileID: 640128500426334152, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 640165009809012772, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 640165010198247294, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 640963694541345717, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 641476152590857224, guid: 9d2c158fba7feaa4197e4124c0640f9c,
         type: 3}
       propertyPath: m_Name
@@ -6169,7 +6197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &256073722
 Transform:
   m_ObjectHideFlags: 0
@@ -6426,7 +6454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &294146879
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16025,7 +16053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &405790765
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16125,7 +16153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &437223673
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16468,7 +16496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &464784028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16590,6 +16618,10 @@ PrefabInstance:
     - target: {fileID: 1867068849227326, guid: df159233b7037438b92f745daaa8393d, type: 3}
       propertyPath: m_Name
       value: truck-broken
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867068849227326, guid: df159233b7037438b92f745daaa8393d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1867068849227326, guid: df159233b7037438b92f745daaa8393d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16718,7 +16750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &512931774
 Transform:
   m_ObjectHideFlags: 0
@@ -21864,7 +21896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &735612343
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21964,7 +21996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &736153816
 Transform:
   m_ObjectHideFlags: 0
@@ -22183,7 +22215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &828967250
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22432,6 +22464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa844b36be4cf6d428675ceed798c524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 0}
   trigger: {fileID: 1723842071}
   anim: {fileID: 4373967701884946082}
   magnetOn: 1
@@ -22560,7 +22593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &878061475
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22754,6 +22787,10 @@ PrefabInstance:
       value: SM_Veh_Truck_01 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -22930,6 +22967,10 @@ PrefabInstance:
     - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
       propertyPath: m_Name
       value: SM_Veh_Truck_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23373,7 +23414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &934700789
 Transform:
   m_ObjectHideFlags: 0
@@ -23471,6 +23512,10 @@ PrefabInstance:
       value: SM_Veh_Truck_01 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -23566,7 +23611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &973087751
 Transform:
   m_ObjectHideFlags: 0
@@ -23692,6 +23737,10 @@ PrefabInstance:
     - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
       propertyPath: m_Name
       value: SM_Veh_Truck_01_DumpsterTray (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23877,7 +23926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1042463411
 Transform:
   m_ObjectHideFlags: 0
@@ -28904,7 +28953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1058998336
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29004,7 +29053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1070043450
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29178,6 +29227,10 @@ PrefabInstance:
       value: SM_Veh_Truck_01_DumpsterTray (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -29310,7 +29363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1107340241
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29410,7 +29463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1125998329
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29510,7 +29563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1148400378
 Transform:
   m_ObjectHideFlags: 0
@@ -29896,6 +29949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa844b36be4cf6d428675ceed798c524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 100004, guid: 754a7a7c55ee2ce4493a0e4079785280, type: 3}
   trigger: {fileID: 1843051441}
   anim: {fileID: 4373967701884946082}
   magnetOn: 1
@@ -30014,6 +30068,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233961639}
   m_CullTransparentMesh: 1
+--- !u!1 &1248301767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1248301768}
+  - component: {fileID: 1248301770}
+  - component: {fileID: 1248301769}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1248301768
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248301767}
+  m_LocalRotation: {x: -0, y: -0, z: 0.70724356, w: -0.7069701}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 647158186952567618}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 269.978}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 312.00012, y: -43.262817}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1248301769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248301767}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 965b8233ffa244846a0538133379dcc2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1248301770
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248301767}
+  m_CullTransparentMesh: 1
 --- !u!1 &1271582373
 GameObject:
   m_ObjectHideFlags: 0
@@ -30032,7 +30161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1271582374
 Transform:
   m_ObjectHideFlags: 0
@@ -30677,6 +30806,10 @@ PrefabInstance:
       value: SM_Veh_Truck_01 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312293643810310, guid: fbbc556a7ada436429b7e4e9eeb75b42, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -31184,6 +31317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-broken
       objectReference: {fileID: 0}
+    - target: {fileID: 1605575077324966, guid: 4ce5810d97c334666aac7e6a21a6fda3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4867975337336814, guid: 4ce5810d97c334666aac7e6a21a6fda3, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -31317,7 +31454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1573588835
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31496,7 +31633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1588115653
 Transform:
   m_ObjectHideFlags: 0
@@ -31596,7 +31733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1631550683
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31793,7 +31930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1663494828
 Transform:
   m_ObjectHideFlags: 0
@@ -31896,6 +32033,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 640128500426334152, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 640165009809012772, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 640165010198247294, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 640963694541345717, guid: 9d2c158fba7feaa4197e4124c0640f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 641476152590857224, guid: 9d2c158fba7feaa4197e4124c0640f9c,
         type: 3}
@@ -32440,7 +32597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1741177036
 Transform:
   m_ObjectHideFlags: 0
@@ -37237,6 +37394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tires (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 1972712497760932, guid: b4253e1f3df2a478a9183c5f02619bd9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4750576767719616, guid: b4253e1f3df2a478a9183c5f02619bd9, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -37488,7 +37649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1822748692
 Transform:
   m_ObjectHideFlags: 0
@@ -37844,7 +38005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1863648669
 Transform:
   m_ObjectHideFlags: 0
@@ -37936,6 +38097,10 @@ PrefabInstance:
     - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
       propertyPath: m_Name
       value: SM_Veh_Truck_01_DumpsterTray (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1075584245410214, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38031,6 +38196,10 @@ PrefabInstance:
       value: truck-broken
       objectReference: {fileID: 0}
     - target: {fileID: 1867068849227326, guid: df159233b7037438b92f745daaa8393d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867068849227326, guid: df159233b7037438b92f745daaa8393d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -38109,7 +38278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2002909130
 Transform:
   m_ObjectHideFlags: 0
@@ -38287,7 +38456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &2031851208
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38678,6 +38847,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4000393537959633072, guid: 6a039786742454229819b64566cf8fc9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a039786742454229819b64566cf8fc9, type: 3}
 --- !u!4 &2087021948 stripped
@@ -38744,6 +38918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa844b36be4cf6d428675ceed798c524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 0}
   trigger: {fileID: 1843051441}
   anim: {fileID: 0}
   magnetOn: 1
@@ -38820,7 +38995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &47541353205234916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39250,7 +39425,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1248301768}
   m_Father: {fileID: 2522635914885887880}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41364,9 +41540,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -121, y: -912.35486}
+  m_AnchoredPosition: {x: -73.35486, y: 47.64514}
   m_SizeDelta: {x: 600.38, y: -1824.7097}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2561331140763146276
 GameObject:
   m_ObjectHideFlags: 0

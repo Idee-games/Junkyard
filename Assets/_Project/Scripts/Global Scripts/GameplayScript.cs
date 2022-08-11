@@ -46,6 +46,13 @@ public class GameplayScript : MonoBehaviour {
     public bool DoubleRewardBought { get => doubleRewardBought; set => doubleRewardBought = value; }
 
     void Awake() {
+        if (Toolbox.DB.prefs.LastSelectedLevel > 14)
+        {
+
+            Toolbox.DB.prefs.LastSelectedLevel = 0;
+
+
+        }
         string path;
         path = Constants.PrefabFolderPath + Constants.LevelsScriptablesFolderPath + Toolbox.DB.prefs.LastSelectedMode.ToString() + "/" + Toolbox.DB.prefs.LastSelectedLevel.ToString();
         curLevelData = (LevelData)Resources.Load(path);

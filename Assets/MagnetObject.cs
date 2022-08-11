@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MagnetObject : MonoBehaviour
 {
+    public GameObject effect;
     int magnetPower;
     private LevelData curLevelData;
     public GameObject trigger;

@@ -548,6 +548,7 @@ GameObject:
   - component: {fileID: 652086876}
   - component: {fileID: 652086878}
   - component: {fileID: 652086877}
+  - component: {fileID: 652086882}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -587,7 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.49803922}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -612,6 +613,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652086875}
   m_CullTransparentMesh: 1
+--- !u!95 &652086882
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652086875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9e439a92ba87b349899e0970abae2e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1131335845
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +853,7 @@ PrefabInstance:
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: gameBG
       value: 
-      objectReference: {fileID: 8300000, guid: c8b4f380b6ac3c540b7d58af7e994e37, type: 3}
+      objectReference: {fileID: 8300000, guid: ae6a72f210dbd0842aadc5b6b1b08d6c, type: 3}
     - target: {fileID: 11484784, guid: ce968ffb37fd3924b9688c04e192b1ac, type: 3}
       propertyPath: menuBG
       value: 
@@ -935,7 +955,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: c8b4f380b6ac3c540b7d58af7e994e37, type: 3}
+      objectReference: {fileID: 8300000, guid: ae6a72f210dbd0842aadc5b6b1b08d6c, type: 3}
     - target: {fileID: 7912474111823871658, guid: ce968ffb37fd3924b9688c04e192b1ac,
         type: 3}
       propertyPath: m_IsActive

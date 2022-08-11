@@ -152,7 +152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   msgTxt: {fileID: 8932264968931222535}
   unlockBtn: {fileID: 0}
-  Shine: {fileID: 3366462855417942593}
   Unlock: {fileID: 4174493137405997375}
   isPopupMsg: 0
 --- !u!1 &313785064079113633
@@ -649,6 +648,7 @@ GameObject:
   - component: {fileID: 4641036883262024783}
   - component: {fileID: 8887669769611761768}
   - component: {fileID: 609785505643008570}
+  - component: {fileID: 7802437785766619781}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -713,6 +713,32 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7802437785766619781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3490704800960327317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19b7e2285c104f6ca47d583f3e5444f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectFactor: 0.5
+  m_Width: 0.25
+  m_Rotation: 135
+  m_Softness: 0.7
+  m_Brightness: 1
+  m_Gloss: 1
+  m_EffectArea: 0
+  m_Player:
+    play: 1
+    initialPlayDelay: 0
+    duration: 4
+    loop: 1
+    loopDelay: 0
+    updateMode: 0
 --- !u!1 &3921623026848934398
 GameObject:
   m_ObjectHideFlags: 0

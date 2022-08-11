@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class PopupMsgListner : MonoBehaviour
 {
     public Text msgTxt;
-    public GameObject unlockBtn;
-    public GameObject Shine;
+    public GameObject unlockBtn; 
     public GameObject Unlock;
     public bool isPopupMsg = false;
     LevelData shineShow;
@@ -27,8 +26,7 @@ public class PopupMsgListner : MonoBehaviour
         shineShow = (LevelData)Resources.Load(path);
         if (shineShow.progressPic == 1f)
         {
-            Unlock.SetActive(true);
-            Shine.SetActive(true);
+            Unlock.SetActive(true); 
         }
     } 
 

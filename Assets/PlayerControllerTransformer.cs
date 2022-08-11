@@ -101,11 +101,11 @@ public class PlayerControllerTransformer : MonoBehaviour
             Destroy(brokenCar);
             progress = ((float)count / (float)curLevelHandler.levelCompleteInt);
             Toolbox.HUDListner.SetProgressBarFill(progress);
-            if (progress >= 0.5f)
+            if (progress >= 0.8f)
             {
                 Toolbox.HUDListner.progressbar.color = Color.green;
             }
-            if (progress >= 0.9f)
+            if (progress >= 1f)
             {
                 Toolbox.HUDListner.progressbar.transform.GetChild(0).gameObject.SetActive(true);
             }

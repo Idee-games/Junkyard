@@ -77,13 +77,13 @@ Material:
     - _DstBlend: 0
     - _EmissionLM: 40
     - _EmissionScaleUI: 10
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0.535
     - _Glossiness: 0.339
     - _GlossyReflections: 1
     - _MainTiling: 1
     - _Metallic: 0.697
     - _Mode: 0
-    - _OcclusionStrength: 1
+    - _OcclusionStrength: 0.245
     - _Parallax: 0.02
     - _RimLevel: 4.66
     - _RimPower: 1

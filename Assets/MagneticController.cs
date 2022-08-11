@@ -119,11 +119,11 @@ public class MagneticController : MonoBehaviour
             Toolbox.GameplayScript.counterJunk++;
             progress = ((float)Toolbox.GameplayScript.counterJunk / (float)Toolbox.GameplayScript.levelsManager.CurLevelHandler.levelCompleteInt);
             Toolbox.HUDListner.SetProgressBarFill(progress);
-            if(progress >= 0.5f)
+            if(progress >= 0.8f)
             {
                 Toolbox.HUDListner.progressbar.color = Color.green;
             }
-            if (progress >= 0.9f)
+            if (progress >= 1f)
             {
                 Toolbox.HUDListner.progressbar.transform.GetChild(0).gameObject.SetActive(true) ;
             }

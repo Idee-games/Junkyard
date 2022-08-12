@@ -133,7 +133,7 @@ public class SoundManager : MonoBehaviour {
 		if (_clip != null) 
 			audioo.PlayOneShot (_clip);
 		vehicleRadio.Play();
-		Running.Play();
+		//Running.Play();
 	} 
 
 

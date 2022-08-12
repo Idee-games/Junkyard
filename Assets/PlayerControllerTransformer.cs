@@ -105,10 +105,7 @@ public class PlayerControllerTransformer : MonoBehaviour
             {
                 Toolbox.HUDListner.progressbar.color = Color.green;
             }
-            if (progress >= 1f)
-            {
-                Toolbox.HUDListner.progressbar.transform.GetChild(0).gameObject.SetActive(true);
-            }
+           
         }
         obj = Instantiate(junkPrefab, brokenCar.transform.position, Quaternion.identity) as GameObject;
         obj.transform.parent = null;

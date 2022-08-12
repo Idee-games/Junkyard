@@ -123,10 +123,7 @@ public class MagneticController : MonoBehaviour
             {
                 Toolbox.HUDListner.progressbar.color = Color.green;
             }
-            if (progress >= 1f)
-            {
-                Toolbox.HUDListner.progressbar.transform.GetChild(0).gameObject.SetActive(true) ;
-            }
+           
             counted = true;
 
         } 

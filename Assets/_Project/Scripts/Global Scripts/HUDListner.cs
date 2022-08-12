@@ -90,7 +90,7 @@ public class HUDListner : MonoBehaviour {
 
                 if(Toolbox.GameplayScript.levelsManager.CurLevelData.isTransformer)
                 {
-                    Toolbox.GameplayScript.LevelFailHandling();
+                    Toolbox.GameplayScript.FinalDecisionHandling(1f);
                 }
                 else
                 {

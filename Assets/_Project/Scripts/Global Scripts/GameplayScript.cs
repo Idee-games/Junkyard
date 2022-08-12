@@ -198,7 +198,7 @@ public class GameplayScript : MonoBehaviour {
 
         finalDecisionDelay = _delay;
 
-        if (Toolbox.HUDListner.progress >= 0.5f)
+        if (Toolbox.HUDListner.progress >= 0.8f)
         {
             LevelCompleteHandling();
         }

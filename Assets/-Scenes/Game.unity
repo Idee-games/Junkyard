@@ -6644,7 +6644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testMode: 0
-  isLevelsScene: 0
+  isLevelsScene: 1
   playerController: {fileID: 870471384}
   playerControllerTransformer: {fileID: 1819073634}
   levelCompleted: 0

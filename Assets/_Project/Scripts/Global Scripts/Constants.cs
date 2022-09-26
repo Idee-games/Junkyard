@@ -5,7 +5,7 @@ public static class Constants{
 #if UNITY_ANDROID
 
     public const string moreGamesLink = "";
-    public const string appLink = "https://play.google.com/store/apps/details?id=com.mvgames.mega.ramps.extreme.race";
+    public const string appLink = "https://play.google.com/store/apps/details?id=com.fungamesstudio.crane.picker";
 
 #elif UNITY_IOS
     public const string moreGamesLink = "https://apps.apple.com/pk/developer/muhammad-salman-gurmani/id1549650722";
@@ -14,7 +14,7 @@ public static class Constants{
 #endif
 
 
-    public const string privacyPolicy = "https://docs.google.com/document/d/1Gf1rEWPgCMXkmyJzdQcoTZyyWAVbtbEW/edit";
+    public const string privacyPolicy = "https://ideegames.com/privacy-policy/";
     public const string fb = "";
 
     public const string serverPrefsLink = "";
